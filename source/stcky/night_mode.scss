@@ -1,10 +1,10 @@
 $color_222: #222;
-$color_333: #333; // button background
+$color_333: #333; // button background - only place used
 $color_666: #666;
 $color_888: #888;
 $color_999: #999;
 $color_aaa: #aaa;
-$color_677381: #677381; // link color
+$color_677381: #677381; // link color - only place used
 $color_232323: #232323;
 $color_262626: #262626;
 $color_2c2c2c: #2c2c2c;
@@ -89,11 +89,11 @@ ul#image-preview-list li {
 }
 
 .panestack-title {
-  border-bottom: 1px solid $color_2c2c2c;;
+  border-bottom: 1px solid $color_2c2c2c;
 }
 
 .comment .child, .comment .showreplies {
-  border-left: 1px solid $color_2c2c2c;;
+  border-left: 1px solid $color_2c2c2c;
 }
 
 textarea:focus, input#sr-autocomplete:focus, .usertext-edit textarea:focus, .roundfield input[type=url]:focus {
