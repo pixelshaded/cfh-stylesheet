@@ -1,0 +1,21 @@
+#header, .footer-parent  {
+  background: -webkit-radial-gradient(50% 190%, circle cover, #dda08b 0%, #b77672 50%, #633a48 100%) #444;
+  background: -o-radial-gradient(50% 190%, circle cover, #dda08b 0%, #b77672 50%, #633a48 100%) #444;
+  background: -moz-radial-gradient(50% 190%, circle cover, #dda08b 0%, #b77672 50%, #633a48 100%) #444;
+  background: -ms-radial-gradient(50% 190%, circle cover, #dda08b 0%, #b77672 50%, #633a48 100%) #444;
+}
+
+.morelink {
+  background: -webkit-radial-gradient(50% 300%, circle cover, #dda08b 0%, #b77672 100%) #444;
+  background: -o-radial-gradient(50% 300%, circle cover, #dda08b 0%, #b77672 100%) #444;
+  background: -moz-radial-gradient(50% 300%, circle cover, #dda08b 0%, #b77672 100%) #444;
+  background: -ms-radial-gradient(50% 300%, circle cover, #dda08b 0%, #b77672 100%) #444;
+}
+
+.morelink:hover {
+  background: #b77672;
+}
+
+.morelink a {
+  color: white !important;
+}

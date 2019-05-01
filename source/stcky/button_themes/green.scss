@@ -1,0 +1,21 @@
+#header, .footer-parent  {
+  background: -webkit-radial-gradient(50% 190%, circle cover, #62b46d 0%, #56a561 50%, #447e4c 100%) #444;
+  background: -o-radial-gradient(50% 190%, circle cover, #62b46d 0%, #56a561 50%, #447e4c 100%) #444;
+  background: -moz-radial-gradient(50% 190%, circle cover, #62b46d 0%, #56a561 50%, #447e4c 100%) #444;
+  background: -ms-radial-gradient(50% 190%, circle cover, #62b46d 0%, #56a561 50%, #447e4c 100%) #444;
+}
+
+.morelink {
+  background: -webkit-radial-gradient(50% 190%, circle cover, #62b46d 0%, #56A561 50%, #509059 100%) #444;
+  background: -o-radial-gradient(50% 190%, circle cover, #62b46d 0%, #56A561 50%, #509059 100%) #444;
+  background: -moz-radial-gradient(50% 190%, circle cover, #62b46d 0%, #56A561 50%, #509059 100%) #444;
+  background: -ms-radial-gradient(50% 190%, circle cover, #62b46d 0%, #56A561 50%, #509059 100%) #444;
+}
+
+.morelink:hover {
+  background: #52985b;
+}
+
+.morelink a {
+  color: white !important;
+}
