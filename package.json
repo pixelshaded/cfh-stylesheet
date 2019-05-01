@@ -4,7 +4,7 @@
   "description": "Competitive For Honor Reddit Stylesheet",
   "main": "dist/stylesheet.css",
   "scripts": {
-    "build": "sass source/stylesheet.scss dist/stylesheet.scss"
+    "build": "sass source/index.scss dist/stylesheet.css"
   },
   "repository": {
     "type": "git",
