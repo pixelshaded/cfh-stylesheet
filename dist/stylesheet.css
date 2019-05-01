@@ -358,18 +358,17 @@ ul.tabmenu.formtab {
 }
 
 /*** Note ***/
-/*
 .side .md h4:first-of-type {
-    position: absolute !important;
-    top: 197px;
-    left: 5px;
-    right: 315px;
-    background: #fff;
-    color: #444;
-    padding: 7px 0px 7px 10px;
-    font-size: 12px;
+  position: absolute !important;
+  top: 197px;
+  left: 5px;
+  right: 315px;
+  background: #fff;
+  color: #444;
+  padding: 7px 0px 7px 10px;
+  font-size: 12px;
 }
-*/
+
 .side .md a[title~=redlink] {
   color: #c45b52 !important;
 }
@@ -816,7 +815,7 @@ input[type=text]:focus, input[type=password]:focus {
   height: 65px;
   background: url(%%stckylogo%%) no-repeat;
   font-size: 0;
-  margin: -90px auto 0px auto !important;
+  margin: -25px auto 0px auto !important;
 }
 
 span.hover.pagename.redditname {
@@ -832,7 +831,7 @@ span.hover.pagename.redditname {
   z-index: 11;
   padding: 0px !important;
   font-size: 12px;
-  bottom: -44px !important;
+  bottom: -6px !important;
   transition: 200ms;
 }
 
@@ -1888,21 +1887,19 @@ label[for=flair_enabled] {
 }
 
 /*** ICONS ***/
-/*
 #mail {
-    background: url(%%mail%%) no-repeat center !important;
-    width: 13px !important;
-    height: 14px !important;
-    top: 11px !important;
+  background: url(%%mail%%) no-repeat center !important;
+  width: 13px !important;
+  height: 14px !important;
+  top: 11px !important;
 }
-*/
-/*
+
 #mail.havemail {
-    background: url(%%mail%%) no-repeat center !important;
-    opacity: 1;
-    top: 11px !important;
+  background: url(%%mail2%%) no-repeat center !important;
+  opacity: 0.8;
+  top: 11px !important;
 }
-*/
+
 .res #mail.havemail {
   top: 11px !important;
 }
