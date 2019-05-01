@@ -2618,286 +2618,18 @@ ul#image-preview-list .preview img {
   right: 45px;
 }
 
-
-
 /*** NIGHT MODE ***/
 
-html[lang^="nm"] body {
-  background: #222;
-}
+html[lang^=nm] {
+  @import "./night_mode.scss";
 
-html[lang^="nm"] button {
-  background: #333333;
-  border: 1px solid #222222;
-  box-shadow: 0 1px #222222;
-  color: #888;
-}
+  .titlebox .md a[href*="#dm"] {
+    display: block;
+  }
 
-html[lang^="nm"] a, html[lang^="nm"] .side .md blockquote a {
-  color: #677381;
-}
-
-html[lang^="nm"] h4 {
-  color: #aaa;
-}
-
-html[lang="nm"] .res .commentarea .thing, html[lang="nm"] .res .commentarea .child .thing.comment, html[lang="nm"] .content.submit .info-notice {
-  background-color: #262626 !important;
-  border: 1px solid #2C2C2C !important;
-}
-
-html[lang="nm"] .commentarea .md blockquote {
-  background: #2F2F2F;
-  border: 1px solid #424242;
-  border-left: 3px solid #424242;
-}
-
-html[lang="nm"] .commentarea .entry .buttons a[onclick*="reply"]:hover {
-  border-bottom: 1px dotted #aaa;
-}
-
-html[lang="nm"] .new-comment .usertext-body {
-  background-color: #464B51;
-  border: solid 1px #464B51;
-}
-
-html[lang="nm"] .new-comment .usertext-body .md p {
-  color: #C8D3DF;
-}
-
-html[lang^="nm"] .wiki-page .wiki-page-content {
-  border-top: 2px solid #222;
-}
-
-html[lang^="nm"] .wiki-page .wiki-page-content hr {
-  border: 1px solid #222;
-}
-
-html[lang^="nm"] .wiki-page .wiki-page-content .wiki>.toc>ul {
-  border: 1px solid #1E1E1E;
-  box-shadow: 0 0 8px #1E1E1E;
-}
-
-html[lang^="nm"] .link, html[lang^="nm"] .side, html[lang^="nm"] .side .md blockquote, html[lang^="nm"] .side .help blockquote, html[lang^="nm"] .sidecontentbox .content, html[lang^="nm"] .icon-menu a, html[lang^="nm"] .nav-buttons, html[lang^="nm"] .footer, html[lang^="nm"] .commentarea, html[lang^="nm"] .commentarea .menuarea, html[lang^="nm"] #preview-table, html[lang^="nm"] .stylesheet-customize-container #images, html[lang^="nm"] .pretty-form, html[lang^="nm"] .formtabs-content .infobar, html[lang^="nm"] .roundfield, html[lang^="nm"] .wiki-page>.content {
-  background: #262626;
-}
-
-html[lang^="nm"] .roundfield textarea, html[lang^="nm"] .roundfield input[type=text], html[lang^="nm"] .roundfield input[type=url], html[lang^="nm"] .roundfield input[type=password], html[lang^="nm"] .roundfield input[type=number], html[lang^="nm"] .usertext-edit textarea, html[lang^="nm"] .pretty-form input[type=text], html[lang^="nm"] .pretty-form textarea, html[lang^="nm"] .pretty-form input[type=password], html[lang^="nm"] .pretty-form input[type=number], html[lang^="nm"] #stylesheet_contents, html[lang^="nm"] #preview-table>table, html[lang^="nm"] .stylesheet-customize-container #images .image-upload input#img-name  {
-  background: #262626;
-  border: 1px solid #2c2c2c !important;
-  color: #888;
-  outline: 0;
-}
-
-html[lang^="nm"] ul#image-preview-list li {
-  background: #262626;
-  border-bottom: 2px solid #1f1f1f;
-}
-
-html[lang^="nm"] .panestack-title {
-  border-bottom: 1px solid #2c2c2c;
-}
-
-html[lang^="nm"] .comment .child, html[lang^="nm"] .comment .showreplies {
-  border-left: 1px solid #2c2c2c;
-}
-
-html[lang^="nm"] textarea:focus, html[lang^="nm"] input#sr-autocomplete:focus, html[lang^="nm"] .usertext-edit textarea:focus, html[lang^="nm"] .roundfield input[type=url]:focus {
-  border: 1px solid #383838;
-}
-
-html[lang^="nm"] .titlebox form.toggle, html[lang^="nm"] .leavemoderator, html[lang^="nm"] .side .titlebox .tagline, html[lang^="nm"] .titlebox .bottom, html[lang^="nm"] .footer-parent, html[lang^="nm"] .account-activity-box, html[lang^="nm"] .sidebox.create .spacer, html[lang^="nm"] .linkinfo, html[lang^="nm"] #ad-frame, html[lang^="nm"] #ad_main, html[lang^="nm"] span.subscribers, html[lang^="nm"] .users-online {
-  background: #232323;
-}
-
-html[lang^="nm"] .linkinfo .shortlink input{
-  border: 1px solid #262626 !important;
-  background: #262626;
-  color: #888;
-}
-
-html[lang^="nm"] .flair {
-  background: #6b6b6b;
-  border: 1px solid #222;
-  color: #222;
-}
-
-html[lang^="nm"] .link .usertext .md, html[lang^="nm"] .linkflairlabel, html[lang^="nm"] .menuarea .dropdown.lightdrop .selected, html[lang^="nm"] .menuarea .drop-choices.lightdrop {
-  background: #232323;
-  border: 1px solid #232323;
-}
-
-html[lang^="nm"] .footer-parent {
-  border-top: 5px solid #262626;
-}
-
-html[lang^="nm"] .side .md blockquote h3, html[lang^="nm"] .sidecontentbox .title {
-  border-bottom: 2px solid #232323;
-}
-
-html[lang^="nm"] .thing a.title:hover {
-  border-bottom: 1px dotted rgba(255,255,255,0.2);
-}
-
-html[lang^="nm"] .thing .title, html[lang^="nm"] .side .md blockquote, html[lang^="nm"] .wiki-page .md.wiki blockquote h3 {
-  color: #aaa;
-}
-
-html[lang^="nm"] span.score, html[lang^="nm"] .tagline a {
-  color: #aaa;
-}
-
-html[lang^="nm"] .thing .title:visited, html[lang^="nm"] .link .entry li .comments, html[lang^="nm"] .redditSingleClick, html[lang^="nm"] .commentarea {
-  color: #666;
-}
-
-html[lang^="nm"] .entry .buttons li a, html[lang^="nm"] .tagline, html[lang^="nm"] .link .flat-list, html[lang^="nm"] .domain, html[lang^="nm"] .domain a, html[lang^="nm"] .titlebox form.toggle, html[lang^="nm"] .leavemoderator, html[lang^="nm"] #searchexpando label, html[lang^="nm"] .morelink a, html[lang^="nm"] .linkinfo .date {
-  color: #5f5f5f;
-}
-
-html[lang^="nm"] .RES-keyNav-activeElement, html[lang^="nm"] .commentarea .RES-keyNav-activeElement .md, html[lang^="nm"] .commentarea .RES-keyNav-activeElement.entry .noncollapsed {
-  background-color: #2B2C2D !important;
-}
-
-html[lang^="nm"] #sr-header-area a {
-  color: #fff;
-}
-
-html[lang^="nm"] .link.last-clicked {
-  border-top: 1px dashed #444;
-  border-bottom: 1px dashed #444;
-}
-
-html[lang^="nm"] .morelink {
-  background: #1e1e1e !important;
-}
-
-html[lang^="nm"] .morelink:hover {
-  opacity: .6;
-}
-
-html[lang^="nm"] .fancy-toggle-button .remove, html[lang^="nm"] .RESshortcutside.remove, html[lang^="nm"] .RESDashboardToggle.remove, html[lang^="nm"] .RESDashboardToggle, html[lang^="nm"] .RESshortcutside {
-  background: #232323 !important;
-  border: 1px solid #232323 !important;
-}
-
-html[lang^="nm"] .fancy-toggle-button .remove:hover, html[lang^="nm"] .RESshortcutside.remove:hover, html[lang^="nm"] .RESDashboardToggle.remove:hover {
-  background: #c45b52 !important;
-  border: 1px solid #c45b52 !important;
-}
-
-html[lang^="nm"] .expando-button.image.expanded {
-  background-position: -40px -98px !important;
-}
-
-html[lang^="nm"] .expando-button.image.expanded:hover {
-  background-position: -60px -98px !important;
-}
-
-html[lang^="nm"] .expando-button.image.collapsed {
-  background-position: -40px -98px !important;
-}
-
-html[lang^="nm"] .expando-button.image.collapsed:hover {
-  background-position: -60px -98px !important;
-}
-
-html[lang^="nm"] .expando-button.selftext.collapsed {
-  background-position: -40px -38px !important;
-}
-
-html[lang^="nm"] .expando-button.selftext.collapsed:hover {
-  background-position: -60px -38px !important;
-}
-
-html[lang^="nm"] .expando-button.selftext.expanded {
-  background-position: -40px -58px!important;
-}
-
-html[lang^="nm"] .expando-button.selftext.expanded:hover {
-  background-position: -60px -58px!important;
-}
-
-html[lang^="nm"] .expando-button.video.collapsed {
-  background-position: -40px -78px!important;
-}
-
-html[lang^="nm"] .expando-button.video.collapsed:hover {
-  background-position: -60px -78px!important;
-}
-
-html[lang^="nm"] .expando-button.video.expanded {
-  background-position: -40px -78px!important;
-}
-
-html[lang^="nm"] .expando-button.video.expanded:hover {
-  background-position: -60px -78px!important;
-}
-
-html[lang^="nm"] .md .-text, html[lang^="nm"] .md p, html[lang^="nm"] .md pre>code, html[lang^="nm"] .md th, html[lang^="nm"] .md td, html[lang^="nm"] .md li {
-  color: #999;
-}
-
-html[lang^="nm"] .md pre {
-  border: 1px solid #222221;
-  background-color: #272726;
-}
-
-html[lang^="nm"] .wiki-page .md pre {
-  border: 1px solid #222;
-  background-color: #222;
-}
-
-html[lang^="nm"] #search input[type=text] {
-  border-bottom: 2px solid #222 !important;
-  background: transparent;
-  color: #eee !important;
-}
-
-html[lang^="nm"] .searchpane {
-  background: #262626;
-  color: #ccc;
-}
-
-html[lang^="nm"] .menuarea {
-  background: #262626;
-}
-
-html[lang^="nm"] #searchexpando {
-  background: #262626;
-}
-
-html[lang^="nm"] #moresearchinfo {
-  border-top: 1px solid #232323;
-}
-
-html[lang^="nm"] .thumbnail {
-  border: 2px solid #222;
-}
-
-html[lang^="nm"] #ad_sponsorship {
-  border: 1px solid #222;
-}
-
-html[lang^="nm"] .sidecontentbox .collapse-button {
-  background: #222;
-  border: 1px solid #222;
-}
-
-html[lang^="nm"] .res #progressIndicator, html[lang^="nm"] .res .NERPageMarker, html[lang^="nm"] .res #NERFail {
-  background: #2B2C2D;
-  border: 1px solid #2E3032;
-}
-
-html[lang^="nm"] .link .md :not(pre)>code, html[lang^="nm"] .wiki-page :not(pre)>code {
-  background: #6B6B6B;
-  border: 1px solid #6B6B6B;
-  color: #222;
-}
-
-html[lang^="nm"] .side .md h4:first-of-type {
-  background: #262626;
-  color: #666;
+  .titlebox .md a[href*="#nm"] {
+    display: none;
+  }
 }
 
 .titlebox .md a[href*="#nm"], .titlebox .md a[href*="#dm"] {
@@ -2927,64 +2659,18 @@ html[lang^="nm"] .side .md h4:first-of-type {
   display: none;
 }
 
-html[lang^="nm"] .titlebox .md a[href*="#dm"] {
+.titlebox .md a[href*="#dm"] {
   display: block;
 }
 
-html[lang^="nm"] .titlebox .md a[href*="#nm"] {
+.titlebox .md a[href*="#nm"] {
   display: none;
-}
-
-html[lang^="nm"] .footer-parent:before {
-  background: rgba(0,0,0,0.05);
-}
-
-html[lang^="nm"] .nextprev a, html[lang^="nm"] .next-suggestions a, html[lang^="nm"] .res .RESCloseButton {
-  background: #1F1F1F;
-  border: 1px solid #1d1d1d;
-  box-shadow: 0 1px #1d1d1d;
-  color: #999;
-}
-
-html[lang^="nm"] #url-field button {
-  background-color: #1F1F1F;
-  border: 1px solid #1d1d1d;
-  box-shadow: 0 1px #1d1d1d;
-  color: #999;
-}
-
-html[lang^="nm"] .markdownEditor .edit-btn:not(.btn-macro), html[lang^="nm"] .res .RESBigEditorPop {
-  background-color: #6B6B6B;
-  border: 1px solid #1d1d1d;
-  box-shadow: 0 1px #1d1d1d;
-  color: #1D1D1B;
-}
-
-html[lang^="nm"] .res .RESSubscriptionButton {
-  background: #2F2F2F !important;
-  border: 1px solid #424242 !important;
-  box-shadow: 0 1px #424242;
-}
-
-html[lang^="nm"] .nextprev a:hover, html[lang^="nm"] .next-suggestions a:hover {
-  background: #232323;
-  border: 1px solid #1f1f1f;
-}
-
-html[lang^="nm"] .res #RESStyleSheetTipPane {
-  border: 1px solid #1e1e1e;
-}
-
-html[lang^="nm"] .res #RESStyleSheetTipPane-header {
-  border-bottom: 1px solid #1e1e1e;
 }
 
 .res .titlebox .md a[href*="#nm"], .res .titlebox .md a[href*="#dm"] {
   right: 15px !important;
   top: 35px !important;
 }
-
-
 
 /*** NEW MARKDOWN ***/
 
