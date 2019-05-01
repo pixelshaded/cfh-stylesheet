@@ -1,20 +1,29 @@
-$color_222: #222;
-$color_333: #333; // button background - only place used
-$color_666: #666;
-$color_888: #888;
-$color_999: #999;
-$color_aaa: #aaa;
+$color_2b2c2d: #2b2c2d; // RES page marker?
+$color_464b51: #464b51;
 $color_677381: #677381; // link color - only place used
+$color_c8d3df: #c8d3df;
+$color_1d1d1b: #1d1d1b; // markdown edit button text color
+$color_2e3032: #2e3032; // some border in RES
+
+$color_1d1d1d: #1d1d1d;
+$color_1e1e1e: #1e1e1e;
+$color_1f1f1f: #1f1f1f;
+$color_222: #222;
 $color_232323: #232323;
 $color_262626: #262626;
 $color_2c2c2c: #2c2c2c;
 $color_2f2f2f: #2f2f2f;
+$color_333: #333; // button background - only place used
+$color_383838: #383838; // textarea and input focus border
 $color_424242: #424242;
-$color_464b51: #464b51;
-$color_c8d3df: #c8d3df;
-$color_1d1d1d: #1d1d1d;
-$color_1e1e1e: #1e1e1e;
-$color_1f1f1f: #1f1f1f;
+$color_444: #444;
+$color_5f5f5f: #5f5f5f; // certain types of links...
+$color_666: #666;
+$color_6b6b6b: #6b6b6b; // flair, code, markdown edit button background
+$color_888: #888;
+$color_999: #999;
+$color_aaa: #aaa;
+$color_fff: #fff; // sr-header-area text color
 
 body {
   background: $color_222;
@@ -97,7 +106,7 @@ ul#image-preview-list li {
 }
 
 textarea:focus, input#sr-autocomplete:focus, .usertext-edit textarea:focus, .roundfield input[type=url]:focus {
-  border: 1px solid #383838;
+  border: 1px solid $color_383838;
 }
 
 .titlebox form.toggle, .leavemoderator, .side .titlebox .tagline, .titlebox .bottom, .footer-parent, .account-activity-box, .sidebox.create .spacer, .linkinfo, #ad-frame, #ad_main, span.subscribers, .users-online {
@@ -111,7 +120,7 @@ textarea:focus, input#sr-autocomplete:focus, .usertext-edit textarea:focus, .rou
 }
 
 .flair {
-  background: #6b6b6b;
+  background: $color_6b6b6b;
   border: 1px solid $color_222;
   color: $color_222;
 }
@@ -146,20 +155,20 @@ span.score, .tagline a {
 }
 
 .entry .buttons li a, .tagline, .link .flat-list, .domain, .domain a, .titlebox form.toggle, .leavemoderator, #searchexpando label, .morelink a, .linkinfo .date {
-  color: #5f5f5f;
+  color: $color_5f5f5f;
 }
 
 .RES-keyNav-activeElement, .commentarea .RES-keyNav-activeElement .md, .commentarea .RES-keyNav-activeElement.entry .noncollapsed {
-  background-color: #2B2C2D !important;
+  background-color: $color_2b2c2d !important;
 }
 
 #sr-header-area a {
-  color: #fff;
+  color: $color_fff;
 }
 
 .link.last-clicked {
-  border-top: 1px dashed #444;
-  border-bottom: 1px dashed #444;
+  border-top: 1px dashed $color_444;
+  border-bottom: 1px dashed $color_444;
 }
 
 .morelink {
@@ -279,13 +288,13 @@ span.score, .tagline a {
 }
 
 .res #progressIndicator, .res .NERPageMarker, .res #NERFail {
-  background: #2B2C2D;
-  border: 1px solid #2E3032;
+  background: $color_2b2c2d;
+  border: 1px solid $color_2e3032;
 }
 
 .link .md :not(pre)>code, .wiki-page :not(pre)>code {
-  background: #6B6B6B;
-  border: 1px solid #6B6B6B;
+  background: $color_6b6b6b;
+  border: 1px solid $color_6b6b6b;
   color: $color_222;
 }
 
@@ -313,10 +322,10 @@ span.score, .tagline a {
 }
 
 .markdownEditor .edit-btn:not(.btn-macro), .res .RESBigEditorPop {
-  background-color: #6B6B6B;
+  background-color: $color_6b6b6b;
   border: 1px solid $color_1d1d1d;
   box-shadow: 0 1px $color_1d1d1d;
-  color: #1D1D1B;
+  color: $color_1d1d1b;
 }
 
 .res .RESSubscriptionButton {

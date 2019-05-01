@@ -2952,7 +2952,7 @@ html[lang^=nm] .entry .buttons li a, html[lang^=nm] .tagline, html[lang^=nm] .li
   color: #5f5f5f;
 }
 html[lang^=nm] .RES-keyNav-activeElement, html[lang^=nm] .commentarea .RES-keyNav-activeElement .md, html[lang^=nm] .commentarea .RES-keyNav-activeElement.entry .noncollapsed {
-  background-color: #2B2C2D !important;
+  background-color: #2b2c2d !important;
 }
 html[lang^=nm] #sr-header-area a {
   color: #fff;
@@ -3051,12 +3051,12 @@ html[lang^=nm] .sidecontentbox .collapse-button {
   border: 1px solid #222;
 }
 html[lang^=nm] .res #progressIndicator, html[lang^=nm] .res .NERPageMarker, html[lang^=nm] .res #NERFail {
-  background: #2B2C2D;
-  border: 1px solid #2E3032;
+  background: #2b2c2d;
+  border: 1px solid #2e3032;
 }
 html[lang^=nm] .link .md :not(pre) > code, html[lang^=nm] .wiki-page :not(pre) > code {
-  background: #6B6B6B;
-  border: 1px solid #6B6B6B;
+  background: #6b6b6b;
+  border: 1px solid #6b6b6b;
   color: #222;
 }
 html[lang^=nm] .side .md h4:first-of-type {
@@ -3079,10 +3079,10 @@ html[lang^=nm] #url-field button {
   color: #999;
 }
 html[lang^=nm] .markdownEditor .edit-btn:not(.btn-macro), html[lang^=nm] .res .RESBigEditorPop {
-  background-color: #6B6B6B;
+  background-color: #6b6b6b;
   border: 1px solid #1d1d1d;
   box-shadow: 0 1px #1d1d1d;
-  color: #1D1D1B;
+  color: #1d1d1b;
 }
 html[lang^=nm] .res .RESSubscriptionButton {
   background: #2f2f2f !important;
