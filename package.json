@@ -1,0 +1,26 @@
+{
+  "name": "cfh-stylesheet",
+  "version": "1.0.0",
+  "description": "Competitive For Honor Reddit Stylesheet",
+  "main": "dist/stylesheet.css",
+  "scripts": {
+    "build": "sass source/stylesheet.scss dist/stylesheet.scss"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/pixelshaded/cfh-stylesheet.git"
+  },
+  "keywords": [
+    "css",
+    "scss"
+  ],
+  "author": "pixelshaded",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/pixelshaded/cfh-stylesheet/issues"
+  },
+  "homepage": "https://github.com/pixelshaded/cfh-stylesheet#readme",
+  "dependencies": {
+    "sass": "^1.19.0"
+  }
+}
