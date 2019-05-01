@@ -2851,9 +2851,9 @@ html[lang^=nm] body {
   background: #222;
 }
 html[lang^=nm] button {
-  background: #333333;
-  border: 1px solid #222222;
-  box-shadow: 0 1px #222222;
+  background: #333;
+  border: 1px solid #222;
+  box-shadow: 0 1px #222;
   color: #888;
 }
 html[lang^=nm] a, html[lang^=nm] .side .md blockquote a {
@@ -2864,10 +2864,10 @@ html[lang^=nm] h4 {
 }
 html[lang^=nm] .res .commentarea .thing, html[lang^=nm] .res .commentarea .child .thing.comment, html[lang^=nm] .content.submit .info-notice {
   background-color: #262626 !important;
-  border: 1px solid #2C2C2C !important;
+  border: 1px solid #2c2c2c !important;
 }
 html[lang^=nm] .commentarea .md blockquote {
-  background: #2F2F2F;
+  background: #2f2f2f;
   border: 1px solid #424242;
   border-left: 3px solid #424242;
 }
@@ -2875,11 +2875,11 @@ html[lang^=nm] .commentarea .entry .buttons a[onclick*=reply]:hover {
   border-bottom: 1px dotted #aaa;
 }
 html[lang^=nm] .new-comment .usertext-body {
-  background-color: #464B51;
-  border: solid 1px #464B51;
+  background-color: #464b51;
+  border: solid 1px #464b51;
 }
 html[lang^=nm] .new-comment .usertext-body .md p {
-  color: #C8D3DF;
+  color: #c8d3df;
 }
 html[lang^=nm] .wiki-page .wiki-page-content {
   border-top: 2px solid #222;
@@ -2888,8 +2888,8 @@ html[lang^=nm] .wiki-page .wiki-page-content hr {
   border: 1px solid #222;
 }
 html[lang^=nm] .wiki-page .wiki-page-content .wiki > .toc > ul {
-  border: 1px solid #1E1E1E;
-  box-shadow: 0 0 8px #1E1E1E;
+  border: 1px solid #1e1e1e;
+  box-shadow: 0 0 8px #1e1e1e;
 }
 html[lang^=nm] .link, html[lang^=nm] .side, html[lang^=nm] .side .md blockquote, html[lang^=nm] .side .help blockquote, html[lang^=nm] .sidecontentbox .content, html[lang^=nm] .icon-menu a, html[lang^=nm] .nav-buttons, html[lang^=nm] .footer, html[lang^=nm] .commentarea, html[lang^=nm] .commentarea .menuarea, html[lang^=nm] #preview-table, html[lang^=nm] .stylesheet-customize-container #images, html[lang^=nm] .pretty-form, html[lang^=nm] .formtabs-content .infobar, html[lang^=nm] .roundfield, html[lang^=nm] .wiki-page > .content {
   background: #262626;
@@ -3067,13 +3067,13 @@ html[lang^=nm] .footer-parent:before {
   background: rgba(0, 0, 0, 0.05);
 }
 html[lang^=nm] .nextprev a, html[lang^=nm] .next-suggestions a, html[lang^=nm] .res .RESCloseButton {
-  background: #1F1F1F;
+  background: #1f1f1f;
   border: 1px solid #1d1d1d;
   box-shadow: 0 1px #1d1d1d;
   color: #999;
 }
 html[lang^=nm] #url-field button {
-  background-color: #1F1F1F;
+  background-color: #1f1f1f;
   border: 1px solid #1d1d1d;
   box-shadow: 0 1px #1d1d1d;
   color: #999;
@@ -3085,7 +3085,7 @@ html[lang^=nm] .markdownEditor .edit-btn:not(.btn-macro), html[lang^=nm] .res .R
   color: #1D1D1B;
 }
 html[lang^=nm] .res .RESSubscriptionButton {
-  background: #2F2F2F !important;
+  background: #2f2f2f !important;
   border: 1px solid #424242 !important;
   box-shadow: 0 1px #424242;
 }

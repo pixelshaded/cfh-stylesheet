@@ -1,81 +1,99 @@
+$color_222: #222;
+$color_333: #333; // button background
+$color_666: #666;
+$color_888: #888;
+$color_999: #999;
+$color_aaa: #aaa;
+$color_677381: #677381; // link color
+$color_232323: #232323;
+$color_262626: #262626;
+$color_2c2c2c: #2c2c2c;
+$color_2f2f2f: #2f2f2f;
+$color_424242: #424242;
+$color_464b51: #464b51;
+$color_c8d3df: #c8d3df;
+$color_1d1d1d: #1d1d1d;
+$color_1e1e1e: #1e1e1e;
+$color_1f1f1f: #1f1f1f;
+
 body {
-  background: #222;
+  background: $color_222;
 }
 
 button {
-  background: #333333;
-  border: 1px solid #222222;
-  box-shadow: 0 1px #222222;
-  color: #888;
+  background: $color_333;
+  border: 1px solid $color_222;
+  box-shadow: 0 1px $color_222;
+  color: $color_888;
 }
 
 a, .side .md blockquote a {
-  color: #677381;
+  color: $color_677381;
 }
 
 h4 {
-  color: #aaa;
+  color: $color_aaa;
 }
 
 .res .commentarea .thing, .res .commentarea .child .thing.comment, .content.submit .info-notice {
-  background-color: #262626 !important;
-  border: 1px solid #2C2C2C !important;
+  background-color: $color_262626 !important;
+  border: 1px solid $color_2c2c2c !important;
 }
 
 .commentarea .md blockquote {
-  background: #2F2F2F;
-  border: 1px solid #424242;
-  border-left: 3px solid #424242;
+  background: $color_2f2f2f;
+  border: 1px solid $color_424242;
+  border-left: 3px solid $color_424242;
 }
 
 .commentarea .entry .buttons a[onclick*="reply"]:hover {
-  border-bottom: 1px dotted #aaa;
+  border-bottom: 1px dotted $color_aaa;
 }
 
 .new-comment .usertext-body {
-  background-color: #464B51;
-  border: solid 1px #464B51;
+  background-color: $color_464b51;
+  border: solid 1px $color_464b51;
 }
 
 .new-comment .usertext-body .md p {
-  color: #C8D3DF;
+  color: $color_c8d3df;
 }
 
 .wiki-page .wiki-page-content {
-  border-top: 2px solid #222;
+  border-top: 2px solid $color_222;
 }
 
 .wiki-page .wiki-page-content hr {
-  border: 1px solid #222;
+  border: 1px solid $color_222;
 }
 
 .wiki-page .wiki-page-content .wiki>.toc>ul {
-  border: 1px solid #1E1E1E;
-  box-shadow: 0 0 8px #1E1E1E;
+  border: 1px solid $color_1e1e1e;
+  box-shadow: 0 0 8px $color_1e1e1e;
 }
 
 .link, .side, .side .md blockquote, .side .help blockquote, .sidecontentbox .content, .icon-menu a, .nav-buttons, .footer, .commentarea, .commentarea .menuarea, #preview-table, .stylesheet-customize-container #images, .pretty-form, .formtabs-content .infobar, .roundfield, .wiki-page>.content {
-  background: #262626;
+  background: $color_262626;
 }
 
 .roundfield textarea, .roundfield input[type=text], .roundfield input[type=url], .roundfield input[type=password], .roundfield input[type=number], .usertext-edit textarea, .pretty-form input[type=text], .pretty-form textarea, .pretty-form input[type=password], .pretty-form input[type=number], #stylesheet_contents, #preview-table>table, .stylesheet-customize-container #images .image-upload input#img-name  {
-  background: #262626;
-  border: 1px solid #2c2c2c !important;
-  color: #888;
+  background: $color_262626;
+  border: 1px solid $color_2c2c2c !important;
+  color: $color_888;
   outline: 0;
 }
 
 ul#image-preview-list li {
-  background: #262626;
-  border-bottom: 2px solid #1f1f1f;
+  background: $color_262626;
+  border-bottom: 2px solid $color_1f1f1f;
 }
 
 .panestack-title {
-  border-bottom: 1px solid #2c2c2c;
+  border-bottom: 1px solid $color_2c2c2c;;
 }
 
 .comment .child, .comment .showreplies {
-  border-left: 1px solid #2c2c2c;
+  border-left: 1px solid $color_2c2c2c;;
 }
 
 textarea:focus, input#sr-autocomplete:focus, .usertext-edit textarea:focus, .roundfield input[type=url]:focus {
@@ -83,32 +101,32 @@ textarea:focus, input#sr-autocomplete:focus, .usertext-edit textarea:focus, .rou
 }
 
 .titlebox form.toggle, .leavemoderator, .side .titlebox .tagline, .titlebox .bottom, .footer-parent, .account-activity-box, .sidebox.create .spacer, .linkinfo, #ad-frame, #ad_main, span.subscribers, .users-online {
-  background: #232323;
+  background: $color_232323;
 }
 
 .linkinfo .shortlink input{
-  border: 1px solid #262626 !important;
-  background: #262626;
-  color: #888;
+  border: 1px solid $color_262626 !important;
+  background: $color_262626;
+  color: $color_888;
 }
 
 .flair {
   background: #6b6b6b;
-  border: 1px solid #222;
-  color: #222;
+  border: 1px solid $color_222;
+  color: $color_222;
 }
 
 .link .usertext .md, .linkflairlabel, .menuarea .dropdown.lightdrop .selected, .menuarea .drop-choices.lightdrop {
-  background: #232323;
-  border: 1px solid #232323;
+  background: $color_232323;
+  border: 1px solid $color_232323;
 }
 
 .footer-parent {
-  border-top: 5px solid #262626;
+  border-top: 5px solid $color_262626;
 }
 
 .side .md blockquote h3, .sidecontentbox .title {
-  border-bottom: 2px solid #232323;
+  border-bottom: 2px solid $color_232323;
 }
 
 .thing a.title:hover {
@@ -116,15 +134,15 @@ textarea:focus, input#sr-autocomplete:focus, .usertext-edit textarea:focus, .rou
 }
 
 .thing .title, .side .md blockquote, .wiki-page .md.wiki blockquote h3 {
-  color: #aaa;
+  color: $color_aaa;
 }
 
 span.score, .tagline a {
-  color: #aaa;
+  color: $color_aaa;
 }
 
 .thing .title:visited, .link .entry li .comments, .redditSingleClick, .commentarea {
-  color: #666;
+  color: $color_666;
 }
 
 .entry .buttons li a, .tagline, .link .flat-list, .domain, .domain a, .titlebox form.toggle, .leavemoderator, #searchexpando label, .morelink a, .linkinfo .date {
@@ -145,7 +163,7 @@ span.score, .tagline a {
 }
 
 .morelink {
-  background: #1e1e1e !important;
+  background: $color_1e1e1e !important;
 }
 
 .morelink:hover {
@@ -153,8 +171,8 @@ span.score, .tagline a {
 }
 
 .fancy-toggle-button .remove, .RESshortcutside.remove, .RESDashboardToggle.remove, .RESDashboardToggle, .RESshortcutside {
-  background: #232323 !important;
-  border: 1px solid #232323 !important;
+  background: $color_232323 !important;
+  border: 1px solid $color_232323 !important;
 }
 
 .fancy-toggle-button .remove:hover, .RESshortcutside.remove:hover, .RESDashboardToggle.remove:hover {
@@ -211,7 +229,7 @@ span.score, .tagline a {
 }
 
 .md .-text, .md p, .md pre>code, .md th, .md td, .md li {
-  color: #999;
+  color: $color_999;
 }
 
 .md pre {
@@ -220,8 +238,8 @@ span.score, .tagline a {
 }
 
 .wiki-page .md pre {
-  border: 1px solid #222;
-  background-color: #222;
+  border: 1px solid $color_222;
+  background-color: $color_222;
 }
 
 #search input[type=text] {
@@ -231,33 +249,33 @@ span.score, .tagline a {
 }
 
 .searchpane {
-  background: #262626;
+  background: $color_262626;
   color: #ccc;
 }
 
 .menuarea {
-  background: #262626;
+  background: $color_262626;
 }
 
 #searchexpando {
-  background: #262626;
+  background: $color_262626;
 }
 
 #moresearchinfo {
-  border-top: 1px solid #232323;
+  border-top: 1px solid $color_232323;
 }
 
 .thumbnail {
-  border: 2px solid #222;
+  border: 2px solid $color_222;
 }
 
 #ad_sponsorship {
-  border: 1px solid #222;
+  border: 1px solid $color_222;
 }
 
 .sidecontentbox .collapse-button {
-  background: #222;
-  border: 1px solid #222;
+  background: $color_222;
+  border: 1px solid $color_222;
 }
 
 .res #progressIndicator, .res .NERPageMarker, .res #NERFail {
@@ -268,12 +286,12 @@ span.score, .tagline a {
 .link .md :not(pre)>code, .wiki-page :not(pre)>code {
   background: #6B6B6B;
   border: 1px solid #6B6B6B;
-  color: #222;
+  color: $color_222;
 }
 
 .side .md h4:first-of-type {
-  background: #262626;
-  color: #666;
+  background: $color_262626;
+  color: $color_666;
 }
 
 .footer-parent:before {
@@ -281,41 +299,41 @@ span.score, .tagline a {
 }
 
 .nextprev a, .next-suggestions a, .res .RESCloseButton {
-  background: #1F1F1F;
-  border: 1px solid #1d1d1d;
-  box-shadow: 0 1px #1d1d1d;
-  color: #999;
+  background: $color_1f1f1f;
+  border: 1px solid $color_1d1d1d;
+  box-shadow: 0 1px $color_1d1d1d;
+  color: $color_999;
 }
 
 #url-field button {
-  background-color: #1F1F1F;
-  border: 1px solid #1d1d1d;
-  box-shadow: 0 1px #1d1d1d;
-  color: #999;
+  background-color: $color_1f1f1f;
+  border: 1px solid $color_1d1d1d;
+  box-shadow: 0 1px $color_1d1d1d;
+  color: $color_999;
 }
 
 .markdownEditor .edit-btn:not(.btn-macro), .res .RESBigEditorPop {
   background-color: #6B6B6B;
-  border: 1px solid #1d1d1d;
-  box-shadow: 0 1px #1d1d1d;
+  border: 1px solid $color_1d1d1d;
+  box-shadow: 0 1px $color_1d1d1d;
   color: #1D1D1B;
 }
 
 .res .RESSubscriptionButton {
-  background: #2F2F2F !important;
-  border: 1px solid #424242 !important;
-  box-shadow: 0 1px #424242;
+  background: $color_2f2f2f !important;
+  border: 1px solid $color_424242 !important;
+  box-shadow: 0 1px $color_424242;
 }
 
 .nextprev a:hover, .next-suggestions a:hover {
-  background: #232323;
-  border: 1px solid #1f1f1f;
+  background: $color_232323;
+  border: 1px solid $color_1f1f1f;
 }
 
 .res #RESStyleSheetTipPane {
-  border: 1px solid #1e1e1e;
+  border: 1px solid $color_1e1e1e;
 }
 
 .res #RESStyleSheetTipPane-header {
-  border-bottom: 1px solid #1e1e1e;
+  border-bottom: 1px solid $color_1e1e1e;
 }
