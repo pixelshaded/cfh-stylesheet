@@ -1,5 +1,5 @@
-@import "sidebar_menu";
 @import "flair_filters";
+@import "sidebar_menu";
 
 /* Fix Headers - Use Bootstrap Sizing https://getbootstrap.com/docs/4.3/content/typography/ */
 
@@ -45,12 +45,12 @@ html:lang(nm) .side .md > h3 {
   color: #999;
 }
 
-.pagename a {
+#header .pagename a {
   background: url(%%banner%%) no-repeat center !important;
   width: 100% !important;
   height: 244px !important;
   border-radius: 0 !important;
-  margin: -90 0 0 0 !important;
+  margin: -90px 0 0 0 !important;
 }
 
 div.content[role=main] {

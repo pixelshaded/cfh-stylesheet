@@ -46,6 +46,7 @@
 
 /*** Note ***/
 
+/* Using the first h4 for a note. We don't need this.
 .side .md h4:first-of-type {
   position: absolute !important;
   top: 197px;
@@ -56,6 +57,7 @@
   padding: 7px 0px 7px 10px;
   font-size: 12px;
 }
+ */
 
 .side .md a[title~="redlink"] {
   color: #c45b52 !important;
@@ -1627,6 +1629,7 @@ label[for=flair_enabled] {
 
 /*** ICONS ***/
 
+/*
 #mail {
   background: url(%%mail%%) no-repeat center !important;
   width: 13px !important;
@@ -1639,6 +1642,7 @@ label[for=flair_enabled] {
   opacity: .8;
   top: 11px !important;
 }
+*/
 
 .res #mail.havemail {
   top: 11px !important;

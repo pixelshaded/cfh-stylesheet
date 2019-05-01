@@ -1,4 +1,45 @@
 /*
+  Flair Filters
+
+  For each filter you want to add, you will need to pick a two letter language code. This should not be a real one. Q is a good place to start, i.e. qa, qb, qc, qd, etc because no language code starts with q.
+  We use reddit's localization system to implement the filter. When you go to qa.reddit.com for instance, that adds the qa language code the html tag like so <html lang="qa">. From this,
+  you can target your filter's css class using `html:lang(qa) .linkflair-classname`. You can target multiple filters by adding another entry with the same language code but a different filter class.
+
+  Adding Filter to Sidebar Menu
+
+  To add this filter to the sidebar menu, you just add a new list item link to the subreddit with your new lang code as the subdomain: https://qa.reddit.com/r/SubRedditName in the first blockquote of the content.
+
+  Highlighting Selected Filter in Sidebar Menu
+
+  You just need to figure out where the menu item is located. So if its 1, 1 - aka the first item in main menu, then first item in submenu -
+  you can target that with css like so: html:lang(qa) .side .md > blockquote:first-child ul li:nth-child(1) ul li:nth-child(1)
+*/
+html:lang(qa) .linkflair-rework, html:lang(qa) .linkflair-rework-b,
+html:lang(qb) .linkflair-rework-b {
+  display: none !important;
+}
+
+html:lang(en) .side .md > blockquote:first-child ul > li:nth-child(1) > ul > li:nth-child(1),
+html:lang(nm) .side .md > blockquote:first-child ul > li:nth-child(1) > ul > li:nth-child(1),
+html:lang(qa) .side .md > blockquote:first-child ul > li:nth-child(1) > ul > li:nth-child(2),
+html:lang(qb) .side .md > blockquote:first-child ul > li:nth-child(1) > ul > li:nth-child(3),
+html:lang(qc) .side .md > blockquote:first-child ul > li:nth-child(1) > ul > li:nth-child(4) {
+  background-size: 16px 16px;
+  background-image: url(%%all-guard%%);
+  background-repeat: no-repeat;
+  background-position: 10px 6px;
+}
+
+html:lang(en) .side .md > blockquote:first-child ul > li:nth-child(1) > ul > li:nth-child(1) *,
+html:lang(nm) .side .md > blockquote:first-child ul > li:nth-child(1) > ul > li:nth-child(1) *,
+html:lang(qa) .side .md > blockquote:first-child ul > li:nth-child(1) > ul > li:nth-child(2) *,
+html:lang(qb) .side .md > blockquote:first-child ul > li:nth-child(1) > ul > li:nth-child(3) *,
+html:lang(qc) .side .md > blockquote:first-child ul > li:nth-child(1) > ul > li:nth-child(4) * {
+  margin-left: 25px;
+  /* so the text can create space for the all guard background image */
+}
+
+/*
   Sidebar Menu
 
   The sidebar menu works by targeting the first blockquote in the sidebar content and moving it out of the document flow and to the top of the page. In this blockquote, you can add list items
@@ -103,47 +144,6 @@ html[lang^=nm] .side .md blockquote:first-child a {
   margin-right: -30px;
 }
 
-/*
-  Flair Filters
-
-  For each filter you want to add, you will need to pick a two letter language code. This should not be a real one. Q is a good place to start, i.e. qa, qb, qc, qd, etc because no language code starts with q.
-  We use reddit's localization system to implement the filter. When you go to qa.reddit.com for instance, that adds the qa language code the html tag like so <html lang="qa">. From this,
-  you can target your filter's css class using `html:lang(qa) .linkflair-classname`. You can target multiple filters by adding another entry with the same language code but a different filter class.
-
-  Adding Filter to Sidebar Menu
-
-  To add this filter to the sidebar menu, you just add a new list item link to the subreddit with your new lang code as the subdomain: https://qa.reddit.com/r/SubRedditName in the first blockquote of the content.
-
-  Highlighting Selected Filter in Sidebar Menu
-
-  You just need to figure out where the menu item is located. So if its 1, 1 - aka the first item in main menu, then first item in submenu -
-  you can target that with css like so: html:lang(qa) .side .md > blockquote:first-child ul li:nth-child(1) ul li:nth-child(1)
-*/
-html:lang(qa) .linkflair-rework, html:lang(qa) .linkflair-rework-b,
-html:lang(qb) .linkflair-rework-b {
-  display: none !important;
-}
-
-html:lang(en) .side .md > blockquote:first-child ul > li:nth-child(1) > ul > li:nth-child(1),
-html:lang(nm) .side .md > blockquote:first-child ul > li:nth-child(1) > ul > li:nth-child(1),
-html:lang(qa) .side .md > blockquote:first-child ul > li:nth-child(1) > ul > li:nth-child(2),
-html:lang(qb) .side .md > blockquote:first-child ul > li:nth-child(1) > ul > li:nth-child(3),
-html:lang(qc) .side .md > blockquote:first-child ul > li:nth-child(1) > ul > li:nth-child(4) {
-  background-size: 16px 16px;
-  background-image: url(%%all-guard%%);
-  background-repeat: no-repeat;
-  background-position: 10px 6px;
-}
-
-html:lang(en) .side .md > blockquote:first-child ul > li:nth-child(1) > ul > li:nth-child(1) *,
-html:lang(nm) .side .md > blockquote:first-child ul > li:nth-child(1) > ul > li:nth-child(1) *,
-html:lang(qa) .side .md > blockquote:first-child ul > li:nth-child(1) > ul > li:nth-child(2) *,
-html:lang(qb) .side .md > blockquote:first-child ul > li:nth-child(1) > ul > li:nth-child(3) *,
-html:lang(qc) .side .md > blockquote:first-child ul > li:nth-child(1) > ul > li:nth-child(4) * {
-  margin-left: 25px;
-  /* so the text can create space for the all guard background image */
-}
-
 /* Fix Headers - Use Bootstrap Sizing https://getbootstrap.com/docs/4.3/content/typography/ */
 h1, h2, h3, h4, h5, h6 {
   font-weight: 500 !important;
@@ -186,12 +186,12 @@ html:lang(nm) .side .md > h3 {
   color: #999;
 }
 
-.pagename a {
+#header .pagename a {
   background: url(%%banner%%) no-repeat center !important;
   width: 100% !important;
   height: 244px !important;
   border-radius: 0 !important;
-  margin: -90 0 0 0 !important;
+  margin: -90px 0 0 0 !important;
 }
 
 div.content[role=main] {
@@ -358,6 +358,7 @@ ul.tabmenu.formtab {
 }
 
 /*** Note ***/
+/* Using the first h4 for a note. We don't need this.
 .side .md h4:first-of-type {
   position: absolute !important;
   top: 197px;
@@ -368,7 +369,7 @@ ul.tabmenu.formtab {
   padding: 7px 0px 7px 10px;
   font-size: 12px;
 }
-
+ */
 .side .md a[title~=redlink] {
   color: #c45b52 !important;
 }
@@ -1887,6 +1888,7 @@ label[for=flair_enabled] {
 }
 
 /*** ICONS ***/
+/*
 #mail {
   background: url(%%mail%%) no-repeat center !important;
   width: 13px !important;
@@ -1896,10 +1898,10 @@ label[for=flair_enabled] {
 
 #mail.havemail {
   background: url(%%mail2%%) no-repeat center !important;
-  opacity: 0.8;
+  opacity: .8;
   top: 11px !important;
 }
-
+*/
 .res #mail.havemail {
   top: 11px !important;
 }
