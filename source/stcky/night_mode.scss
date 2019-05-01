@@ -25,6 +25,8 @@ $color_999: #999;
 $color_aaa: #aaa;
 $color_fff: #fff; // sr-header-area text color
 
+@import 'button_themes/red.scss';
+
 body {
   background: $color_222;
 }
@@ -154,7 +156,7 @@ span.score, .tagline a {
   color: $color_666;
 }
 
-.entry .buttons li a, .tagline, .link .flat-list, .domain, .domain a, .titlebox form.toggle, .leavemoderator, #searchexpando label, .morelink a, .linkinfo .date {
+.entry .buttons li a, .tagline, .link .flat-list, .domain, .domain a, .titlebox form.toggle, .leavemoderator, #searchexpando label, .linkinfo .date {
   color: $color_5f5f5f;
 }
 
@@ -169,14 +171,6 @@ span.score, .tagline a {
 .link.last-clicked {
   border-top: 1px dashed $color_444;
   border-bottom: 1px dashed $color_444;
-}
-
-.morelink {
-  background: $color_1e1e1e !important;
-}
-
-.morelink:hover {
-  opacity: .6;
 }
 
 .fancy-toggle-button .remove, .RESshortcutside.remove, .RESDashboardToggle.remove, .RESDashboardToggle, .RESshortcutside {

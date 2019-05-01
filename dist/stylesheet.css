@@ -191,7 +191,7 @@ html:lang(nm) .side .md > h3 {
   width: 100% !important;
   height: 244px !important;
   border-radius: 0 !important;
-  margin: -90px 0 0 0 !important;
+  margin: -92px 0 0 0 !important;
 }
 
 div.content[role=main] {
@@ -333,59 +333,6 @@ ul.tabmenu.formtab {
    - Styled non-member message
    - Thumbnails now stretch to fill square
    - Night mode text easier to read */
-/*** COLOR SCHEME ***/
-/* Color of the header and the footer.
-   For a solid color, remove first 4 lines and add 'background: #444;' */
-#header, .footer-parent {
-  background: -webkit-radial-gradient(50% 190%, circle cover, #5f5f5f 0%, #545454 50%, #2c2c2c 100%) #444;
-  background: -o-radial-gradient(50% 190%, circle cover, #5f5f5f 0%, #545454 50%, #2c2c2c 100%) #444;
-  background: -moz-radial-gradient(50% 190%, circle cover, #5f5f5f 0%, #545454 50%, #2c2c2c 100%) #444;
-  background: -ms-radial-gradient(50% 190%, circle cover, #5f5f5f 0%, #545454 50%, #2c2c2c 100%) #444;
-}
-
-/* Color of the submit buttons.
-   For a solid color, remove first 4 lines and add 'background: #444;' */
-.morelink {
-  background: -webkit-radial-gradient(50% 190%, circle cover, #5f5f5f 0%, #545454 50%, #3f3f3f 100%) #444;
-  background: -o-radial-gradient(50% 190%, circle cover, #5f5f5f 0%, #545454 50%, #3f3f3f 100%) #444;
-  background: -moz-radial-gradient(50% 190%, circle cover, #5f5f5f 0%, #545454 50%, #3f3f3f 100%) #444;
-  background: -ms-radial-gradient(50% 190%, circle cover, #5f5f5f 0%, #545454 50%, #3f3f3f 100%) #444;
-}
-
-/* Color of the submit buttons on hover. */
-.morelink:hover {
-  background: #333;
-}
-
-/*** Note ***/
-/* Using the first h4 for a note. We don't need this.
-.side .md h4:first-of-type {
-  position: absolute !important;
-  top: 197px;
-  left: 5px;
-  right: 315px;
-  background: #fff;
-  color: #444;
-  padding: 7px 0px 7px 10px;
-  font-size: 12px;
-}
- */
-.side .md a[title~=redlink] {
-  color: #c45b52 !important;
-}
-
-.content[role=main], .pretty-form {
-  margin-top: 35px !important;
-}
-
-.formtabs-content {
-  margin-top: 39px !important;
-}
-
-.searchpane {
-  margin-top: 35px !important;
-}
-
 /*** FLAIRS ***/
 /* LINK FLAIRS */
 .linkflairlabel {
@@ -1714,7 +1661,6 @@ label + #moresearchinfo {
 .morelink a {
   letter-spacing: 0px;
   font-weight: normal;
-  color: #fff;
 }
 
 .morelink .nub {
@@ -2846,7 +2792,48 @@ ul#image-preview-list .preview img {
   right: 45px;
 }
 
+/*** LIGHT MODE ***/
+#header, .footer-parent {
+  background: -webkit-radial-gradient(50% 190%, circle cover, #5f5f5f 0%, #545454 50%, #2c2c2c 100%) #444;
+  background: -o-radial-gradient(50% 190%, circle cover, #5f5f5f 0%, #545454 50%, #2c2c2c 100%) #444;
+  background: -moz-radial-gradient(50% 190%, circle cover, #5f5f5f 0%, #545454 50%, #2c2c2c 100%) #444;
+  background: -ms-radial-gradient(50% 190%, circle cover, #5f5f5f 0%, #545454 50%, #2c2c2c 100%) #444;
+}
+
+.morelink {
+  background: -webkit-radial-gradient(50% 190%, circle cover, #5f5f5f 0%, #545454 50%, #3f3f3f 100%) #444;
+  background: -o-radial-gradient(50% 190%, circle cover, #5f5f5f 0%, #545454 50%, #3f3f3f 100%) #444;
+  background: -moz-radial-gradient(50% 190%, circle cover, #5f5f5f 0%, #545454 50%, #3f3f3f 100%) #444;
+  background: -ms-radial-gradient(50% 190%, circle cover, #5f5f5f 0%, #545454 50%, #3f3f3f 100%) #444;
+}
+
+.morelink:hover {
+  background: #333;
+}
+
+.morelink a {
+  color: white !important;
+}
+
 /*** NIGHT MODE ***/
+html[lang^=nm] #header, html[lang^=nm] .footer-parent {
+  background: -webkit-radial-gradient(50% 190%, circle cover, #c45b52 0%, #ba574f 50%, #894039 100%) #444;
+  background: -o-radial-gradient(50% 190%, circle cover, #c45b52 0%, #ba574f 50%, #894039 100%) #444;
+  background: -moz-radial-gradient(50% 190%, circle cover, #c45b52 0%, #ba574f 50%, #894039 100%) #444;
+  background: -ms-radial-gradient(50% 190%, circle cover, #c45b52 0%, #ba574f 50%, #894039 100%) #444;
+}
+html[lang^=nm] .morelink {
+  background: -webkit-radial-gradient(50% 190%, circle cover, #c45b52 0%, #ba574f 50%, #9b4b44 100%) #444;
+  background: -o-radial-gradient(50% 190%, circle cover, #c45b52 0%, #ba574f 50%, #9b4b44 100%) #444;
+  background: -moz-radial-gradient(50% 190%, circle cover, #c45b52 0%, #ba574f 50%, #9b4b44 100%) #444;
+  background: -ms-radial-gradient(50% 190%, circle cover, #c45b52 0%, #ba574f 50%, #9b4b44 100%) #444;
+}
+html[lang^=nm] .morelink:hover {
+  background: #95453e;
+}
+html[lang^=nm] .morelink a {
+  color: white !important;
+}
 html[lang^=nm] body {
   background: #222;
 }
@@ -2948,7 +2935,7 @@ html[lang^=nm] span.score, html[lang^=nm] .tagline a {
 html[lang^=nm] .thing .title:visited, html[lang^=nm] .link .entry li .comments, html[lang^=nm] .redditSingleClick, html[lang^=nm] .commentarea {
   color: #666;
 }
-html[lang^=nm] .entry .buttons li a, html[lang^=nm] .tagline, html[lang^=nm] .link .flat-list, html[lang^=nm] .domain, html[lang^=nm] .domain a, html[lang^=nm] .titlebox form.toggle, html[lang^=nm] .leavemoderator, html[lang^=nm] #searchexpando label, html[lang^=nm] .morelink a, html[lang^=nm] .linkinfo .date {
+html[lang^=nm] .entry .buttons li a, html[lang^=nm] .tagline, html[lang^=nm] .link .flat-list, html[lang^=nm] .domain, html[lang^=nm] .domain a, html[lang^=nm] .titlebox form.toggle, html[lang^=nm] .leavemoderator, html[lang^=nm] #searchexpando label, html[lang^=nm] .linkinfo .date {
   color: #5f5f5f;
 }
 html[lang^=nm] .RES-keyNav-activeElement, html[lang^=nm] .commentarea .RES-keyNav-activeElement .md, html[lang^=nm] .commentarea .RES-keyNav-activeElement.entry .noncollapsed {
@@ -2960,12 +2947,6 @@ html[lang^=nm] #sr-header-area a {
 html[lang^=nm] .link.last-clicked {
   border-top: 1px dashed #444;
   border-bottom: 1px dashed #444;
-}
-html[lang^=nm] .morelink {
-  background: #1e1e1e !important;
-}
-html[lang^=nm] .morelink:hover {
-  opacity: 0.6;
 }
 html[lang^=nm] .fancy-toggle-button .remove, html[lang^=nm] .RESshortcutside.remove, html[lang^=nm] .RESDashboardToggle.remove, html[lang^=nm] .RESDashboardToggle, html[lang^=nm] .RESshortcutside {
   background: #232323 !important;
@@ -3130,14 +3111,6 @@ html[lang^=nm] .titlebox .md a[href*="#nm"] {
 }
 
 .titlebox .md a[href*="#dm"] {
-  display: none;
-}
-
-.titlebox .md a[href*="#dm"] {
-  display: block;
-}
-
-.titlebox .md a[href*="#nm"] {
   display: none;
 }
 
