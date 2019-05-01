@@ -1,0 +1,179 @@
+@import "flair_filters";
+@import "sidebar_menu";
+
+/* Fix Headers - Use Bootstrap Sizing https://getbootstrap.com/docs/4.3/content/typography/ */
+
+h1, h2, h3, h4, h5, h6 {
+  font-weight: 500 !important;
+  line-height: 1.2 !important;
+}
+
+h1 {
+  font-size: 2.5rem !important;
+}
+
+h2 {
+  font-size: 2rem !important;
+}
+
+h3 {
+  font-size: 1.75rem !important;
+}
+
+h4 {
+  font-size: 1.5rem !important;
+}
+
+h5 {
+  font-size: 1.25rem !important;
+}
+
+h6 {
+  font-size: 1rem !important;
+}
+
+.side .md h1,
+.side .md h2,
+.side .md h3,
+.side .md h4,
+.side .md h5
+{
+  margin-left: 8px !important;
+}
+
+html:lang(nm) .side .md > h3 {
+  color: #999;
+}
+
+#header .pagename a {
+  background: url(%%banner%%) no-repeat center !important;
+  width: 100% !important;
+  height: 244px !important;
+  border-radius: 0 !important;
+  margin: -90px 0 0 0 !important;
+}
+
+div.content[role=main] {
+  margin-top: 44px !important;
+}
+
+div.side {
+  margin-top: 44px !important;
+}
+
+#header-img, .pagename a {
+  opacity: 1 !important;
+}
+
+#header-bottom-left .tabmenu {
+  bottom: -38px !important;
+  background-color: rgba(0,0,0,0) !important;
+  height: 38px !important;
+}
+
+#header-bottom-left .tabmenu li {
+  line-height: 38px;
+}
+
+#header-bottom-left .tabmenu li a {
+  opacity: 1 !important;
+}
+
+div#header-bottom-right {
+  bottom: -40px !important;
+}
+
+div#header-bottom-right a {
+  opacity: 1 !important;
+}
+
+#header-bottom-right .user .userkarma {
+  color: white !important;
+}
+
+#header {
+  height: 204px !important;
+}
+
+#header #header-bottom-right .separator {
+  display: inline !important;
+}
+
+ul.tabmenu.formtab {
+  top: 211px !important;
+  left: -5px !important;
+  z-index: 100 !important;
+}
+
+.content h1 {
+  display: initial !important;
+}
+
+.message-count {
+  margin-right: 8px !important;
+  background-color: white !important;
+}
+
+#mail {
+  height: 10px !important;
+  width: 15px !important;
+  top: 1px !important;
+  padding: 0 !important;
+}
+
+#header-bottom-right a.message-count:hover {
+  background-color: white !important;
+}
+
+#modmail, #new_modmail {
+  top: 0px !important;
+  width: 14px !important;
+  height: 18px !important;
+  padding: 0 !important;
+}
+
+#modmail.nohavemail {
+  margin: 8px !important;
+  top: 10px !important;
+}
+
+#header #header-bottom-right a#modmail:hover, #header #header-bottom-right a#new_modmail:hover {
+  background-color: rgba(0, 0, 0, 0) !important;
+}
+
+#header {
+  border-bottom: 38px solid #dfac39 !important;
+  margin-bottom: -38px !important;
+}
+
+.content > h1:first-child {
+  display: none !important;
+}
+
+.sidecontentbox .title > h1:first-child {
+  font-size: 1rem !important;
+}
+
+.sidecontentbox a.helplink {
+  right: 154px !important;
+}
+
+.logout a {
+  margin-left: -10px !important;
+}
+
+#header-img.default-header {
+  display: none !important;
+}
+
+#header-bottom-left {
+  margin-top: 56px !important;
+}
+
+#sr-header-area .redesign-beta-optin {
+  display: none !important;
+}
+
+.footer-parent {
+  display: none !important;
+}
