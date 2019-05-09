@@ -56,60 +56,20 @@ html[lang^=nm] .side .md blockquote:first-child a {
   border: none !important;
   padding: 0;
   margin: 0;
-  z-index: 120;
+  z-index: 100;
 }
-
+.side .md > blockquote:first-child a {
+  width: 150px !important;
+  display: block !important;
+  height: 15px !important;
+  margin-right: -30px;
+}
 .side .md > blockquote:first-child ul {
   background: #dfb03c;
   list-style: none;
   margin: 0;
   padding-left: 0;
 }
-
-.side .md > blockquote:first-child > ul {
-  border-top: 4px solid #dfb03c;
-  border-bottom: 35px solid #dfb03c;
-}
-
-.side .md > blockquote:first-child li {
-  color: white;
-  background: #dfb03c;
-  display: block;
-  float: left;
-  position: relative;
-  text-decoration: none;
-  transition-duration: 0.5s;
-  white-space: nowrap;
-}
-
-.side .md > blockquote:first-child ul > li > ul > li {
-  padding: 0.5rem 0rem 0.5rem 0.5rem;
-}
-
-.side .md > blockquote:first-child ul > li {
-  padding: 0.5rem;
-}
-
-.side .md > blockquote:first-child li a {
-  color: white;
-}
-
-.side .md > blockquote:first-child li a:hover {
-  text-decoration: none;
-  color: white;
-}
-
-.side .md > blockquote:first-child li:hover,
-.side .md > blockquote:first-child li:focus-within {
-  background: #c9a036;
-  cursor: pointer;
-  color: #fff;
-}
-
-.side .md > blockquote:first-child li:focus-within a {
-  outline: none;
-}
-
 .side .md > blockquote:first-child ul li ul {
   background: #b28e2f;
   visibility: hidden;
@@ -121,7 +81,45 @@ html[lang^=nm] .side .md blockquote:first-child a {
   left: 0;
   display: none;
 }
-
+.side .md > blockquote:first-child ul li ul li {
+  clear: both;
+  width: 100%;
+}
+.side .md > blockquote:first-child > ul {
+  border-top: 4px solid #dfb03c;
+  border-bottom: 35px solid #dfb03c;
+}
+.side .md > blockquote:first-child li {
+  color: white;
+  background: #dfb03c;
+  display: block;
+  float: left;
+  position: relative;
+  text-decoration: none;
+  transition-duration: 0.5s;
+  white-space: nowrap;
+}
+.side .md > blockquote:first-child li:hover, .side .md > blockquote:first-child li :focus-within {
+  background: #c9a036;
+  cursor: pointer;
+  color: #fff;
+}
+.side .md > blockquote:first-child li:focus-within a {
+  outline: none;
+}
+.side .md > blockquote:first-child li a {
+  color: white;
+}
+.side .md > blockquote:first-child li a:hover {
+  text-decoration: none;
+  color: white;
+}
+.side .md > blockquote:first-child ul > li {
+  padding: 0.5rem;
+}
+.side .md > blockquote:first-child ul > li > ul > li {
+  padding: 0.5rem 0 0.5rem 0.5rem;
+}
 .side .md > blockquote:first-child ul li:hover > ul,
 .side .md > blockquote:first-child ul li:focus-within > ul,
 .side .md > blockquote:first-child ul li ul:hover,
@@ -129,19 +127,6 @@ html[lang^=nm] .side .md blockquote:first-child a {
   visibility: visible;
   opacity: 1;
   display: block;
-}
-
-.side .md > blockquote:first-child ul li ul li {
-  clear: both;
-  width: 100%;
-}
-
-/* to improve hit box to cover more than just text */
-.side .md blockquote:first-child a {
-  width: 150px !important;
-  display: block !important;
-  height: 15px !important;
-  margin-right: -30px;
 }
 
 /* Fix Headers - Use Bootstrap Sizing https://getbootstrap.com/docs/4.3/content/typography/ */
