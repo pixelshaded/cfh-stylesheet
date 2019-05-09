@@ -175,3 +175,16 @@ span.hover.pagename.redditname {
 .linefield span+span {
   margin-left: 10px !important;
 }
+
+.sr-bar a {
+  opacity: 1 !important;
+}
+
+#sr-header-area .srdrop.dropdown {
+  background-color: rgba(0, 0, 0, 0.6) !important;
+  opacity: 0.8 !important;
+  &:hover {
+    background-color: rgba(0, 0, 0, 0.7) !important;
+    opacity: 1 !important;
+  }
+}
