@@ -13,31 +13,42 @@
 
   You just need to figure out where the menu item is located. So if its 1, 1 - aka the first item in main menu, then first item in submenu -
   you can target that with css like so: html:lang(qa) .side .md > blockquote:first-child ul li:nth-child(1) ul li:nth-child(1)
+
+  Use the createFlairFilter mixin to create all the necessary classes for each filter
 */
 
-html:lang(qa) .linkflair-rework, html:lang(qa) .linkflair-rework-b,
-html:lang(qb) .linkflair-rework-b
-{
-  display: none !important;
+@mixin createFlairFilter($langCode, $mainMenuItemNum, $subMenuItemNum, $isFilterOut, $flairClasses) {
+  html:lang(#{$langCode}) .side .md > blockquote:first-child ul > li:nth-child(#{$mainMenuItemNum}) > ul > li:nth-child(#{$subMenuItemNum}) {
+    background-size: 16px 16px;
+    background-image: url(%%all-guard%%);
+    background-repeat: no-repeat;
+    background-position: 10px 6px;
+  }
+  html:lang(#{$langCode}) .side .md > blockquote:first-child ul > li:nth-child(#{$mainMenuItemNum}) > ul > li:nth-child(#{$subMenuItemNum}) * {
+    margin-left: 25px; /* so the text can create space for the all guard background image */
+  }
+
+  @if $isFilterOut {
+    @each $flairClass in $flairClasses {
+      html:lang(#{$langCode}) .linkflair-#{$flairClass} {
+        display: none !important;
+      }
+    }
+  } @else {
+    html:lang(#{$langCode}) .thing.link {
+      display: none !important;
+    }
+    @each $flairClass in $flairClasses {
+      html:lang(#{$langCode}) .linkflair.linkflair-#{$flairClass} {
+        display: block !important;
+      }
+    }
+  }
 }
 
-html:lang(en) .side .md > blockquote:first-child ul > li:nth-child(1) > ul > li:nth-child(1),
-html:lang(nm) .side .md > blockquote:first-child ul > li:nth-child(1) > ul > li:nth-child(1),
-html:lang(qa) .side .md > blockquote:first-child ul > li:nth-child(1) > ul > li:nth-child(2),
-html:lang(qb) .side .md > blockquote:first-child ul > li:nth-child(1) > ul > li:nth-child(3),
-html:lang(qc) .side .md > blockquote:first-child ul > li:nth-child(1) > ul > li:nth-child(4)
-{
-  background-size: 16px 16px;
-  background-image: url(%%all-guard%%);
-  background-repeat: no-repeat;
-  background-position: 10px 6px;
-}
-
-html:lang(en) .side .md > blockquote:first-child ul > li:nth-child(1) > ul > li:nth-child(1) *,
-html:lang(nm) .side .md > blockquote:first-child ul > li:nth-child(1) > ul > li:nth-child(1) *,
-html:lang(qa) .side .md > blockquote:first-child ul > li:nth-child(1) > ul > li:nth-child(2) *,
-html:lang(qb) .side .md > blockquote:first-child ul > li:nth-child(1) > ul > li:nth-child(3) *,
-html:lang(qc) .side .md > blockquote:first-child ul > li:nth-child(1) > ul > li:nth-child(4) *
-{
-  margin-left: 25px; /* so the text can create space for the all guard background image */
-}
+@include createFlairFilter(en, 1, 1, true, none);
+@include createFlairFilter(nm, 1, 1, true, none);
+@include createFlairFilter(qa, 1, 2, true, rework);
+@include createFlairFilter(qb, 1, 3, false, tips-tricks video-guide punish-combo);
+@include createFlairFilter(qc, 1, 4, false, discussion rework);
+@include createFlairFilter(qd, 1, 5, false, psa moderator-post tournament);

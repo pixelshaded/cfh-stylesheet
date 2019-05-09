@@ -13,16 +13,85 @@
 
   You just need to figure out where the menu item is located. So if its 1, 1 - aka the first item in main menu, then first item in submenu -
   you can target that with css like so: html:lang(qa) .side .md > blockquote:first-child ul li:nth-child(1) ul li:nth-child(1)
+
+  Use the createFlairFilter mixin to create all the necessary classes for each filter
 */
-html:lang(qa) .linkflair-rework, html:lang(qa) .linkflair-rework-b,
-html:lang(qb) .linkflair-rework-b {
+html:lang(en) .side .md > blockquote:first-child ul > li:nth-child(1) > ul > li:nth-child(1) {
+  background-size: 16px 16px;
+  background-image: url(%%all-guard%%);
+  background-repeat: no-repeat;
+  background-position: 10px 6px;
+}
+
+html:lang(en) .side .md > blockquote:first-child ul > li:nth-child(1) > ul > li:nth-child(1) * {
+  margin-left: 25px;
+  /* so the text can create space for the all guard background image */
+}
+
+html:lang(en) .linkflair-none {
   display: none !important;
 }
 
-html:lang(en) .side .md > blockquote:first-child ul > li:nth-child(1) > ul > li:nth-child(1),
-html:lang(nm) .side .md > blockquote:first-child ul > li:nth-child(1) > ul > li:nth-child(1),
-html:lang(qa) .side .md > blockquote:first-child ul > li:nth-child(1) > ul > li:nth-child(2),
-html:lang(qb) .side .md > blockquote:first-child ul > li:nth-child(1) > ul > li:nth-child(3),
+html:lang(nm) .side .md > blockquote:first-child ul > li:nth-child(1) > ul > li:nth-child(1) {
+  background-size: 16px 16px;
+  background-image: url(%%all-guard%%);
+  background-repeat: no-repeat;
+  background-position: 10px 6px;
+}
+
+html:lang(nm) .side .md > blockquote:first-child ul > li:nth-child(1) > ul > li:nth-child(1) * {
+  margin-left: 25px;
+  /* so the text can create space for the all guard background image */
+}
+
+html:lang(nm) .linkflair-none {
+  display: none !important;
+}
+
+html:lang(qa) .side .md > blockquote:first-child ul > li:nth-child(1) > ul > li:nth-child(2) {
+  background-size: 16px 16px;
+  background-image: url(%%all-guard%%);
+  background-repeat: no-repeat;
+  background-position: 10px 6px;
+}
+
+html:lang(qa) .side .md > blockquote:first-child ul > li:nth-child(1) > ul > li:nth-child(2) * {
+  margin-left: 25px;
+  /* so the text can create space for the all guard background image */
+}
+
+html:lang(qa) .linkflair-rework {
+  display: none !important;
+}
+
+html:lang(qb) .side .md > blockquote:first-child ul > li:nth-child(1) > ul > li:nth-child(3) {
+  background-size: 16px 16px;
+  background-image: url(%%all-guard%%);
+  background-repeat: no-repeat;
+  background-position: 10px 6px;
+}
+
+html:lang(qb) .side .md > blockquote:first-child ul > li:nth-child(1) > ul > li:nth-child(3) * {
+  margin-left: 25px;
+  /* so the text can create space for the all guard background image */
+}
+
+html:lang(qb) .thing.link {
+  display: none !important;
+}
+
+html:lang(qb) .linkflair.linkflair-tips-tricks {
+  display: block !important;
+}
+
+html:lang(qb) .linkflair.linkflair-video-guide {
+  display: block !important;
+}
+
+html:lang(qb) .linkflair.linkflair-punish-combo {
+  display: block !important;
+}
+
 html:lang(qc) .side .md > blockquote:first-child ul > li:nth-child(1) > ul > li:nth-child(4) {
   background-size: 16px 16px;
   background-image: url(%%all-guard%%);
@@ -30,13 +99,49 @@ html:lang(qc) .side .md > blockquote:first-child ul > li:nth-child(1) > ul > li:
   background-position: 10px 6px;
 }
 
-html:lang(en) .side .md > blockquote:first-child ul > li:nth-child(1) > ul > li:nth-child(1) *,
-html:lang(nm) .side .md > blockquote:first-child ul > li:nth-child(1) > ul > li:nth-child(1) *,
-html:lang(qa) .side .md > blockquote:first-child ul > li:nth-child(1) > ul > li:nth-child(2) *,
-html:lang(qb) .side .md > blockquote:first-child ul > li:nth-child(1) > ul > li:nth-child(3) *,
 html:lang(qc) .side .md > blockquote:first-child ul > li:nth-child(1) > ul > li:nth-child(4) * {
   margin-left: 25px;
   /* so the text can create space for the all guard background image */
+}
+
+html:lang(qc) .thing.link {
+  display: none !important;
+}
+
+html:lang(qc) .linkflair.linkflair-discussion {
+  display: block !important;
+}
+
+html:lang(qc) .linkflair.linkflair-rework {
+  display: block !important;
+}
+
+html:lang(qd) .side .md > blockquote:first-child ul > li:nth-child(1) > ul > li:nth-child(5) {
+  background-size: 16px 16px;
+  background-image: url(%%all-guard%%);
+  background-repeat: no-repeat;
+  background-position: 10px 6px;
+}
+
+html:lang(qd) .side .md > blockquote:first-child ul > li:nth-child(1) > ul > li:nth-child(5) * {
+  margin-left: 25px;
+  /* so the text can create space for the all guard background image */
+}
+
+html:lang(qd) .thing.link {
+  display: none !important;
+}
+
+html:lang(qd) .linkflair.linkflair-psa {
+  display: block !important;
+}
+
+html:lang(qd) .linkflair.linkflair-moderator-post {
+  display: block !important;
+}
+
+html:lang(qd) .linkflair.linkflair-tournament {
+  display: block !important;
 }
 
 /*
@@ -51,18 +156,17 @@ html[lang^=nm] .side .md blockquote:first-child a {
 
 .side .md > blockquote:first-child {
   position: absolute;
-  top: 130px;
+  top: 204px;
   left: 0;
   border: none !important;
   padding: 0;
   margin: 0;
-  z-index: 100;
+  z-index: 90;
+  width: 100%;
 }
 .side .md > blockquote:first-child a {
-  width: 150px !important;
   display: block !important;
   height: 15px !important;
-  margin-right: -30px;
 }
 .side .md > blockquote:first-child ul {
   background: #dfb03c;
@@ -172,15 +276,19 @@ html:lang(nm) .side .md > h3 {
 }
 
 #header .pagename a {
-  background: url(%%banner%%) no-repeat center !important;
+  background: url(%%test-banner-slim%%) no-repeat center !important;
   width: 100% !important;
-  height: 244px !important;
+  height: 204px !important;
   border-radius: 0 !important;
-  margin: -92px 0 0 0 !important;
+  margin: 0 !important;
 }
 
 div.content[role=main] {
   margin-top: 44px !important;
+}
+
+form.content {
+  margin-top: 74px !important;
 }
 
 div.side {
@@ -192,7 +300,6 @@ div.side {
 }
 
 #header-bottom-left .tabmenu {
-  bottom: -38px !important;
   background-color: rgba(0, 0, 0, 0) !important;
   height: 38px !important;
 }
@@ -203,10 +310,6 @@ div.side {
 
 #header-bottom-left .tabmenu li a {
   opacity: 1 !important;
-}
-
-div#header-bottom-right {
-  bottom: -40px !important;
 }
 
 div#header-bottom-right a {
@@ -226,7 +329,7 @@ div#header-bottom-right a {
 }
 
 ul.tabmenu.formtab {
-  top: 211px !important;
+  top: 248px !important;
   left: -5px !important;
   z-index: 100 !important;
 }
@@ -267,11 +370,6 @@ ul.tabmenu.formtab {
   background-color: rgba(0, 0, 0, 0) !important;
 }
 
-#header {
-  border-bottom: 38px solid #dfac39 !important;
-  margin-bottom: -38px !important;
-}
-
 .content > h1:first-child {
   display: none !important;
 }
@@ -292,16 +390,20 @@ ul.tabmenu.formtab {
   display: none !important;
 }
 
-#header-bottom-left {
-  margin-top: 56px !important;
-}
-
 #sr-header-area .redesign-beta-optin {
   display: none !important;
 }
 
 .footer-parent {
   display: none !important;
+}
+
+span.hover.pagename.redditname {
+  margin-top: -34px !important;
+}
+
+.linefield span + span {
+  margin-left: 10px !important;
 }
 
 /* [ STCKY v1.07 by doingstuffcarl ]
