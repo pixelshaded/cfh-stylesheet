@@ -1,1 +1,359 @@
+$color_2b2c2d: #2b2c2d; // RES page marker?
+$color_464b51: #464b51;
+$color_677381: #677381; // link color - only place used
+$color_c8d3df: #c8d3df;
+$color_1d1d1b: #1d1d1b; // markdown edit button text color
+$color_2e3032: #2e3032; // some border in RES
+
+$color_1d1d1d: #1d1d1d;
+$color_1e1e1e: #1e1e1e;
+$color_1f1f1f: #1f1f1f;
+$color_222: #222;
+$color_232323: #232323;
+$color_262626: #262626;
+$color_2c2c2c: #2c2c2c;
+$color_2f2f2f: #2f2f2f;
+$color_333: #333; // button background - only place used
+$color_383838: #383838; // textarea and input focus border
+$color_424242: #424242;
+$color_444: #444;
+$color_5f5f5f: #5f5f5f; // certain types of links...
+$color_666: #666;
+$color_6b6b6b: #6b6b6b; // flair, code, markdown edit button background
+$color_888: #888;
+$color_999: #999;
+$color_aaa: #aaa;
+$color_fff: #fff; // sr-header-area text color
+
+/* Begin light theme */
+$color_f0f0f0: #f0f0f0; // body background color
+$color_fafafa: #fafafa;
+$color_fcfcfc: #fcfcfc; // button background color
+$color_f2f2f2: #f2f2f2;
+$color_e9e9e9: #e9e9e9; // button border color
+$color_222: #222; // header color
+$color_444: #444; // comment color
+$color_666: #666; // button text color
+$color_999: #999;
+$color_fff: #fff; // info-notice background and border
+$color_e5efff: #e5efff; // background of new comments
+$color_cddaf3: #cddaf3; // border of new comments
+$color_f9f9f9: #f9f9f9;
+$color_f5f5f5: #f5f5f5;
+
 @import 'button_themes/dark.scss';
+
+body {
+  background: $color_f0f0f0;
+}
+
+button {
+  background: $color_fcfcfc;
+  border: 1px solid $color_e9e9e9;
+  box-shadow: 0 1px $color_e9e9e9;
+  color: $color_666;
+}
+
+a, .side .md blockquote a {
+  color: $color_677381;
+}
+
+h1, h2, h3, h4, h5 {
+  color: $color_222;
+}
+
+.res .commentarea .thing, .res .commentarea .child .thing.comment, .content.submit .info-notice {
+  background-color: $color_fff;
+  border: 1px solid $color_fff;
+}
+
+.commentarea .md blockquote {
+  background: $color_fafafa;
+  border: 1px solid $color_f2f2f2;
+  border-left: 3px solid $color_f2f2f2;
+}
+
+.commentarea .entry .buttons a[onclick*="reply"]:hover {
+  border-bottom: 1px dotted $color_999;
+}
+
+
+.new-comment .usertext-body {
+  background-color: $color_e5efff;
+  border: solid 1px $color_cddaf3;
+}
+
+.new-comment .usertext-body .md p {
+  color: $color_444;
+}
+
+.wiki-page .wiki-page-content {
+  border-top: 2px solid $color_f9f9f9;
+}
+
+.wiki-page .wiki-page-content hr {
+  border: 1px solid $color_f9f9f9;
+}
+
+.wiki-page .wiki-page-content .wiki>.toc>ul {
+  border: 1px solid $color_f0f0f0;
+  box-shadow: 0 0 8px $color_f5f5f5;
+}
+
+.link, .side, .side .md blockquote, .side .help blockquote, .sidecontentbox .content, .icon-menu a, .nav-buttons, .footer, .commentarea, .commentarea .menuarea, #preview-table, .stylesheet-customize-container #images, .pretty-form, .formtabs-content .infobar, .roundfield, .wiki-page>.content {
+  background-color: $color_fff;
+}
+
+.roundfield textarea, .roundfield input[type=text], .roundfield input[type=url], .roundfield input[type=password], .roundfield input[type=number], .usertext-edit textarea, .pretty-form input[type=text], .pretty-form textarea, .pretty-form input[type=password], .pretty-form input[type=number], #stylesheet_contents, #preview-table>table, .stylesheet-customize-container #images .image-upload input#img-name  {
+  background: $color_262626;
+  border: 1px solid $color_2c2c2c !important;
+  color: $color_888;
+  outline: 0;
+}
+
+ul#image-preview-list li {
+  background: $color_262626;
+  border-bottom: 2px solid $color_1f1f1f;
+}
+
+.panestack-title {
+  border-bottom: 1px solid $color_2c2c2c;
+}
+
+.comment .child, .comment .showreplies {
+  border-left: 1px solid $color_2c2c2c;
+}
+
+textarea:focus, input#sr-autocomplete:focus, .usertext-edit textarea:focus, .roundfield input[type=url]:focus {
+  border: 1px solid $color_383838;
+}
+
+.titlebox form.toggle, .leavemoderator, .side .titlebox .tagline, .titlebox .bottom, .footer-parent, .account-activity-box, .sidebox.create .spacer, .linkinfo, #ad-frame, #ad_main, span.subscribers, .users-online {
+  background: $color_232323;
+}
+
+.linkinfo .shortlink input{
+  border: 1px solid $color_262626 !important;
+  background: $color_262626;
+  color: $color_888;
+}
+
+.flair {
+  background: $color_6b6b6b;
+  border: 1px solid $color_222;
+  color: $color_222;
+}
+
+.link .usertext .md, .linkflairlabel, .menuarea .dropdown.lightdrop .selected, .menuarea .drop-choices.lightdrop {
+  background: $color_232323;
+  border: 1px solid $color_232323;
+}
+
+.footer-parent {
+  border-top: 5px solid $color_262626;
+}
+
+.side .md blockquote h3, .sidecontentbox .title {
+  border-bottom: 2px solid $color_232323;
+}
+
+.thing a.title:hover {
+  border-bottom: 1px dotted rgba(255,255,255,0.2);
+}
+
+.thing .title, .side .md blockquote, .wiki-page .md.wiki blockquote h3 {
+  color: $color_aaa;
+}
+
+span.score, .tagline a {
+  color: $color_aaa;
+}
+
+.thing .title:visited, .link .entry li .comments, .redditSingleClick, .commentarea {
+  color: $color_666;
+}
+
+.entry .buttons li a, .tagline, .link .flat-list, .domain, .domain a, .titlebox form.toggle, .leavemoderator, #searchexpando label, .linkinfo .date {
+  color: $color_5f5f5f;
+}
+
+.RES-keyNav-activeElement, .commentarea .RES-keyNav-activeElement .md, .commentarea .RES-keyNav-activeElement.entry .noncollapsed {
+  background-color: $color_2b2c2d !important;
+}
+
+#sr-header-area a {
+  color: $color_fff;
+}
+
+.link.last-clicked {
+  border-top: 1px dashed $color_444;
+  border-bottom: 1px dashed $color_444;
+}
+
+.fancy-toggle-button .remove, .RESshortcutside.remove, .RESDashboardToggle.remove, .RESDashboardToggle, .RESshortcutside {
+  background: $color_232323 !important;
+  border: 1px solid $color_232323 !important;
+}
+
+.fancy-toggle-button .remove:hover, .RESshortcutside.remove:hover, .RESDashboardToggle.remove:hover {
+  background: #c45b52 !important;
+  border: 1px solid #c45b52 !important;
+}
+
+.expando-button.image.expanded {
+  background-position: -40px -98px !important;
+}
+
+.expando-button.image.expanded:hover {
+  background-position: -60px -98px !important;
+}
+
+.expando-button.image.collapsed {
+  background-position: -40px -98px !important;
+}
+
+.expando-button.image.collapsed:hover {
+  background-position: -60px -98px !important;
+}
+
+.expando-button.selftext.collapsed {
+  background-position: -40px -38px !important;
+}
+
+.expando-button.selftext.collapsed:hover {
+  background-position: -60px -38px !important;
+}
+
+.expando-button.selftext.expanded {
+  background-position: -40px -58px!important;
+}
+
+.expando-button.selftext.expanded:hover {
+  background-position: -60px -58px!important;
+}
+
+.expando-button.video.collapsed {
+  background-position: -40px -78px!important;
+}
+
+.expando-button.video.collapsed:hover {
+  background-position: -60px -78px!important;
+}
+
+.expando-button.video.expanded {
+  background-position: -40px -78px!important;
+}
+
+.expando-button.video.expanded:hover {
+  background-position: -60px -78px!important;
+}
+
+.md .-text, .md p, .md pre>code, .md th, .md td, .md li {
+  color: $color_999;
+}
+
+.md pre {
+  border: 1px solid #222221;
+  background-color: #272726;
+}
+
+.wiki-page .md pre {
+  border: 1px solid $color_222;
+  background-color: $color_222;
+}
+
+#search input[type=text] {
+  border-bottom: 2px solid #222 !important;
+  background: transparent;
+  color: #eee !important;
+}
+
+.searchpane {
+  background: $color_262626;
+  color: #ccc;
+}
+
+.menuarea {
+  background: $color_262626;
+}
+
+#searchexpando {
+  background: $color_262626;
+}
+
+#moresearchinfo {
+  border-top: 1px solid $color_232323;
+}
+
+.thumbnail {
+  border: 2px solid $color_222;
+}
+
+#ad_sponsorship {
+  border: 1px solid $color_222;
+}
+
+.sidecontentbox .collapse-button {
+  background: $color_222;
+  border: 1px solid $color_222;
+}
+
+.res #progressIndicator, .res .NERPageMarker, .res #NERFail {
+  background: $color_2b2c2d;
+  border: 1px solid $color_2e3032;
+}
+
+.link .md :not(pre)>code, .wiki-page :not(pre)>code {
+  background: $color_6b6b6b;
+  border: 1px solid $color_6b6b6b;
+  color: $color_222;
+}
+
+.side .md h4:first-of-type {
+  background: $color_262626;
+  color: $color_666;
+}
+
+.footer-parent:before {
+  background: rgba(0,0,0,0.05);
+}
+
+.nextprev a, .next-suggestions a, .res .RESCloseButton {
+  background: $color_1f1f1f;
+  border: 1px solid $color_1d1d1d;
+  box-shadow: 0 1px $color_1d1d1d;
+  color: $color_999;
+}
+
+#url-field button {
+  background-color: $color_1f1f1f;
+  border: 1px solid $color_1d1d1d;
+  box-shadow: 0 1px $color_1d1d1d;
+  color: $color_999;
+}
+
+.markdownEditor .edit-btn:not(.btn-macro), .res .RESBigEditorPop {
+  background-color: $color_6b6b6b;
+  border: 1px solid $color_1d1d1d;
+  box-shadow: 0 1px $color_1d1d1d;
+  color: $color_1d1d1b;
+}
+
+.res .RESSubscriptionButton {
+  background: $color_2f2f2f !important;
+  border: 1px solid $color_424242 !important;
+  box-shadow: 0 1px $color_424242;
+}
+
+.nextprev a:hover, .next-suggestions a:hover {
+  background: $color_232323;
+  border: 1px solid $color_1f1f1f;
+}
+
+.res #RESStyleSheetTipPane {
+  border: 1px solid $color_1e1e1e;
+}
+
+.res #RESStyleSheetTipPane-header {
+  border-bottom: 1px solid $color_1e1e1e;
+}

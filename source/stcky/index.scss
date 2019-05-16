@@ -195,11 +195,8 @@
 }
 
 body {
-  background: #f0f0f0;
   font-family: Helvetica, Arial, sans-serif;
 }
-
-
 
 /*** BROWSER ***/
 
@@ -281,13 +278,9 @@ body {
 /* COMMON BUTTONS */
 
 button {
-  background: #fcfcfc;
-  border: 1px solid #e9e9e9;
-  box-shadow: 0 1px #e9e9e9;
   margin-bottom: 4px !important;
   border-radius: 2px;
   padding: 4px 8px;
-  color: #666;
   font-weight: bold;
 }
 
@@ -587,7 +580,6 @@ span.hover.pagename.redditname {
 
 .link {
   padding-left: 5px;
-  background: #fff;
   margin-bottom: 1px;
   color: #444;
 }
@@ -910,7 +902,6 @@ span.hover.pagename.redditname {
 
 .nav-buttons {
   padding: 10px 5px;
-  background: #fff;
 }
 
 .nextprev, .next-suggestions {
@@ -1011,7 +1002,6 @@ a.thumbnail.self {
   margin-top: 5px;
   margin-bottom: 30px;
   padding: 10px 10px 10px 10px;
-  background-color: #fff;
   color: #3b3b3b;
 }
 
@@ -1020,12 +1010,6 @@ a.thumbnail.self {
   border: none;
   border-left: 3px solid #5e82a6;
   padding: 6px 10px;
-}
-
-.commentarea .md blockquote {
-  background: #FAFAFA;
-  border: 1px solid #F2F2F2;
-  border-left: 3px solid #f2f2f2;
 }
 
 .self .usertext .md blockquote {
@@ -1069,10 +1053,6 @@ a.thumbnail.self {
   color: #868686 !important;
   border-bottom: 1px dotted rgba(0,0,0,0.1);
   text-decoration: none;
-}
-
-.commentarea .entry .buttons a[onclick*="reply"]:hover {
-  border-bottom: 1px dotted rgba(0,0,0,0.4);
 }
 
 .usertext .help-toggle, .usertext a.reddiquette {
@@ -1240,7 +1220,6 @@ a.thumbnail.self {
 
 .sidecontentbox .content {
   border: 0;
-  background: #fff;
 }
 
 .sidecontentbox .title {
@@ -1738,7 +1717,6 @@ label[for=flair_enabled] {
 
 .formtabs-content .infobar {
   width: 506px;
-  background: #fff;
   color: #666;
   border: 0;
   padding: 8px 12px;
@@ -1746,7 +1724,6 @@ label[for=flair_enabled] {
 
 .roundfield {
   border-radius: 0px;
-  background: #fff;
   padding: 15px;
   font-size: medium;
   color: #555;
@@ -1806,8 +1783,6 @@ div#title-field {
 }
 
 .content.submit .info-notice {
-  background: #fff;
-  border: 1px solid #fff;
   border-radius: 0px;
   margin-bottom: 5px;
   margin-left: -5px;
@@ -1898,7 +1873,6 @@ form .spacer+.spacer {
 }
 
 .footer {
-  background: rgba(0,0,0,0.1);
   border: 0;
   border-radius: 0;
   padding: 15px 20px;
@@ -2092,7 +2066,6 @@ form .spacer+.spacer {
 /*** STYLESHEET ***/
 
 .pretty-form {
-  background: #fff;
   margin-top: 5px;
   padding: 5px;
 }
@@ -2137,7 +2110,6 @@ label[for=reason] {
   font-size: 12px;
   padding: 10px;
   margin-top: 5px;
-  background: #fff;
   color: #555;
 }
 
@@ -2174,7 +2146,6 @@ label[for=reason] {
 /* PREVIEW */
 
 #preview-table {
-  background: #fff;
   margin-top: 5px;
   padding: 5px 10px 10px 10px;
 }
@@ -2664,16 +2635,11 @@ html[lang^=nm] {
   background: rgba(0,0,0,0.2);
 }
 
-.wiki-page>.content {
-  background: #fff;
-}
-
 .wiki-page .wiki-page-content {
   background: transparent;
   margin: 5px 10px 10px 10px;
   padding-bottom: 10px;
   padding-top: 5px;
-  border-top: 2px solid #f9f9f9;
 }
 
 .wiki-page .wiki-page-content .md blockquote, .wiki-page .wiki-page-content .help blockquote {
@@ -2698,14 +2664,8 @@ html[lang^=nm] {
   color: #5e82a6;
 }
 
-.wiki-page .wiki-page-content hr {
-  border: 1px solid #f9f9f9;
-}
-
 .wiki-page .wiki-page-content .wiki>.toc>ul {
   padding: 12px 14px;
-  border: 1px solid #F0F0F0;
-  box-shadow: 0 0 8px #F5F5F5;
   border-radius: 2px;
 }
 

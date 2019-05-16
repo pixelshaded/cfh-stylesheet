@@ -22,7 +22,7 @@ $color_666: #666;
 $color_6b6b6b: #6b6b6b; // flair, code, markdown edit button background
 $color_888: #888;
 $color_999: #999;
-$color_aaa: #aaa;
+$color_aaa: #aaa; // header colors
 $color_fff: #fff; // sr-header-area text color
 
 @import 'button_themes/red.scss';
@@ -42,13 +42,13 @@ a, .side .md blockquote a {
   color: $color_677381;
 }
 
-h4 {
+h1, h2, h3, h4, h5 {
   color: $color_aaa;
 }
 
 .res .commentarea .thing, .res .commentarea .child .thing.comment, .content.submit .info-notice {
-  background-color: $color_262626 !important;
-  border: 1px solid $color_2c2c2c !important;
+  background-color: $color_262626;
+  border: 1px solid $color_2c2c2c;
 }
 
 .commentarea .md blockquote {
@@ -84,7 +84,7 @@ h4 {
 }
 
 .link, .side, .side .md blockquote, .side .help blockquote, .sidecontentbox .content, .icon-menu a, .nav-buttons, .footer, .commentarea, .commentarea .menuarea, #preview-table, .stylesheet-customize-container #images, .pretty-form, .formtabs-content .infobar, .roundfield, .wiki-page>.content {
-  background: $color_262626;
+  background-color: $color_262626;
 }
 
 .roundfield textarea, .roundfield input[type=text], .roundfield input[type=url], .roundfield input[type=password], .roundfield input[type=number], .usertext-edit textarea, .pretty-form input[type=text], .pretty-form textarea, .pretty-form input[type=password], .pretty-form input[type=number], #stylesheet_contents, #preview-table>table, .stylesheet-customize-container #images .image-upload input#img-name  {
