@@ -46,12 +46,12 @@
   }
 }
 
-@include createFlairFilter(en, 1, 1, true, none);
-@include createFlairFilter(nm, 1, 1, true, none);
-@include createFlairFilter(qa, 1, 2, true, rework);
-@include createFlairFilter(qb, 1, 3, false, tips-tricks video-guide punish-combo);
-@include createFlairFilter(qc, 1, 4, false, discussion rework);
-@include createFlairFilter(qd, 1, 5, false, psa moderator-post tournament);
+@include createFlairFilter(en, 1, 1, true, "none");
+@include createFlairFilter(nm, 1, 1, true, "none");
+@include createFlairFilter(qa, 1, 2, true, "rework");
+@include createFlairFilter(qb, 1, 3, false, "tips-tricks" "video-guide" "punish-combo");
+@include createFlairFilter(qc, 1, 4, false, "discussion" "rework");
+@include createFlairFilter(qd, 1, 5, false, "psa" "moderator-post" "tournament");
 
 @mixin createFlairColor($color, $bgColor, $flairClass) {
   .linkflair-#{$flairClass} .linkflairlabel, .flair-#{$flairClass}[title] {
