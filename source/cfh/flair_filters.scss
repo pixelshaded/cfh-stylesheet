@@ -52,3 +52,37 @@
 @include createFlairFilter(qb, 1, 3, false, tips-tricks video-guide punish-combo);
 @include createFlairFilter(qc, 1, 4, false, discussion rework);
 @include createFlairFilter(qd, 1, 5, false, psa moderator-post tournament);
+
+@mixin createFlairColor($color, $bgColor, $flairClass) {
+  .linkflair-#{$flairClass} .linkflairlabel, .flair-#{$flairClass}[title] {
+    background: $bgColor;
+    border: 1px solid $bgColor;
+    color: $color;
+  }
+}
+
+$blue: #5e82a6;
+$red: #c45b52;
+$yellow: #fde025;
+$orange: #ff9f4f;
+$teal: #55c3c0;
+$pink: #fc8cf2;
+$purple: #8362b4;
+$green: #62b46d;
+
+@include createFlairColor(#fff, $blue, "blue");
+@include createFlairColor(#fff, $blue, "discussion");
+@include createFlairColor(#fff, $red, "red");
+@include createFlairColor(#fff, $red, "rework");
+@include createFlairColor(#000, $yellow, "yellow");
+@include createFlairColor(#000, $yellow, "punish-combo");
+@include createFlairColor(#fff, $orange, "orange");
+@include createFlairColor(#fff, $orange, "psa");
+@include createFlairColor(#fff, $teal, "teal");
+@include createFlairColor(#fff, $teal, "tournament");
+@include createFlairColor(#fff, $pink, "pink");
+@include createFlairColor(#fff, $pink, "video-guide");
+@include createFlairColor(#fff, $purple, "purple");
+@include createFlairColor(#fff, $purple, "tips-tricks");
+@include createFlairColor(#fff, $green, "green");
+@include createFlairColor(#fff, $green, "moderator-post");
