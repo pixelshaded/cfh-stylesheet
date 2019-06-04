@@ -144,6 +144,102 @@ html:lang(qd) .linkflair.linkflair-tournament {
   display: block !important;
 }
 
+.linkflair-blue .linkflairlabel, .flair-blue[title] {
+  background: #5e82a6;
+  border: 1px solid #5e82a6;
+  color: #fff;
+}
+
+.linkflair-discussion .linkflairlabel, .flair-discussion[title] {
+  background: #5e82a6;
+  border: 1px solid #5e82a6;
+  color: #fff;
+}
+
+.linkflair-red .linkflairlabel, .flair-red[title] {
+  background: #c45b52;
+  border: 1px solid #c45b52;
+  color: #fff;
+}
+
+.linkflair-rework .linkflairlabel, .flair-rework[title] {
+  background: #c45b52;
+  border: 1px solid #c45b52;
+  color: #fff;
+}
+
+.linkflair-yellow .linkflairlabel, .flair-yellow[title] {
+  background: #fde025;
+  border: 1px solid #fde025;
+  color: #000;
+}
+
+.linkflair-punish-combo .linkflairlabel, .flair-punish-combo[title] {
+  background: #fde025;
+  border: 1px solid #fde025;
+  color: #000;
+}
+
+.linkflair-orange .linkflairlabel, .flair-orange[title] {
+  background: #ff9f4f;
+  border: 1px solid #ff9f4f;
+  color: #fff;
+}
+
+.linkflair-psa .linkflairlabel, .flair-psa[title] {
+  background: #ff9f4f;
+  border: 1px solid #ff9f4f;
+  color: #fff;
+}
+
+.linkflair-teal .linkflairlabel, .flair-teal[title] {
+  background: #55c3c0;
+  border: 1px solid #55c3c0;
+  color: #fff;
+}
+
+.linkflair-tournament .linkflairlabel, .flair-tournament[title] {
+  background: #55c3c0;
+  border: 1px solid #55c3c0;
+  color: #fff;
+}
+
+.linkflair-pink .linkflairlabel, .flair-pink[title] {
+  background: #fc8cf2;
+  border: 1px solid #fc8cf2;
+  color: #fff;
+}
+
+.linkflair-video-guide .linkflairlabel, .flair-video-guide[title] {
+  background: #fc8cf2;
+  border: 1px solid #fc8cf2;
+  color: #fff;
+}
+
+.linkflair-purple .linkflairlabel, .flair-purple[title] {
+  background: #8362b4;
+  border: 1px solid #8362b4;
+  color: #fff;
+}
+
+.linkflair-tips-tricks .linkflairlabel, .flair-tips-tricks[title] {
+  background: #8362b4;
+  border: 1px solid #8362b4;
+  color: #fff;
+}
+
+.linkflair-green .linkflairlabel, .flair-green[title] {
+  background: #62b46d;
+  border: 1px solid #62b46d;
+  color: #fff;
+}
+
+.linkflair-moderator-post .linkflairlabel, .flair-moderator-post[title] {
+  background: #62b46d;
+  border: 1px solid #62b46d;
+  color: #fff;
+}
+
 /*
   Sidebar Menu
 
